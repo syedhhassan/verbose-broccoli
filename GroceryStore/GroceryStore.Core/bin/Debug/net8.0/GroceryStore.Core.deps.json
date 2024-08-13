@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GroceryStore.Core/1.0.0": {
+        "runtime": {
+          "GroceryStore.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GroceryStore.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

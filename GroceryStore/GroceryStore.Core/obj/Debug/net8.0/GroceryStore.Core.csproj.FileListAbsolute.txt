@@ -1,0 +1,12 @@
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\bin\Debug\net8.0\GroceryStore.Core.deps.json
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\bin\Debug\net8.0\GroceryStore.Core.dll
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\bin\Debug\net8.0\GroceryStore.Core.pdb
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\obj\Debug\net8.0\GroceryStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\obj\Debug\net8.0\GroceryStore.Core.AssemblyInfoInputs.cache
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\obj\Debug\net8.0\GroceryStore.Core.AssemblyInfo.cs
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\obj\Debug\net8.0\GroceryStore.Core.csproj.CoreCompileInputs.cache
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\obj\Debug\net8.0\GroceryStore.Core.sourcelink.json
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\obj\Debug\net8.0\GroceryStore.Core.dll
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\obj\Debug\net8.0\refint\GroceryStore.Core.dll
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\obj\Debug\net8.0\GroceryStore.Core.pdb
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore.Core\obj\Debug\net8.0\ref\GroceryStore.Core.dll
