@@ -1,7 +1,7 @@
 ﻿@model GroceryStore.Models.UserModel;
 
 <link rel="stylesheet" href="~/css/user.css" />
-<div class="section">
+<div class="section" style="background-color: #FBFCF8;">
 	<div class="container">
 		<div class="row full-height justify-content-center">
 			<div class="col-12 text-center align-self-center py-5">
@@ -10,7 +10,7 @@
 					<input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
 					<label for="reg-log"></label>
 					<div class="card-3d-wrap mx-auto">
-						<div class="card-3d-wrapper">
+						<div class="card-3d-wrapper box-shadow shadow-lg">
 							<div class="card-front">
 								<div class="center-wrap">
 									<div class="section text-center">
@@ -18,14 +18,14 @@
 										@using (Html.BeginForm("SignIn", "User", FormMethod.Post, new { @id = "SignUp" }))
 										{
 											<div class="form-group">
-												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-												<i class="input-icon uil uil-at"></i>
+												@Html.TextBox("Email", "", new { @class = "form-style", @id = "logemail", maxlength = 50, @placeholder = "Your Email", @autocomplete = "off" })
+ 												<i class="input-icon uil uil-at"></i>
 											</div>
 											<div class="form-group mt-2">
-												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+												@Html.TextBox("Password", "", new { @class = "form-style", @id = "logpass", maxlength = 50, @placeholder = "Your Password", @type = "password", @autocomplete = "off" })
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<btn type="submit" class="btn mt-4">Login</btn>
+											<button type="submit" class="btn mt-4" id="submit">Login</button>
 										}
 									</div>
 								</div>
@@ -34,19 +34,30 @@
 								<div class="center-wrap">
 									<div class="section text-center">
 										<h4 class="mb-4 pb-3">Sign Up</h4>
-										<div class="form-group">
-											<input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
-											<i class="input-icon uil uil-user"></i>
-										</div>
-										<div class="form-group mt-2">
-											<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-											<i class="input-icon uil uil-at"></i>
-										</div>
-										<div class="form-group mt-2">
-											<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-											<i class="input-icon uil uil-lock-alt"></i>
-										</div>
-										<a href="#" class="btn mt-4">submit</a>
+										@using (Html.BeginForm("SignUp", "User", FormMethod.Post, new { @id = "SignUp" }))
+										{
+											<div class="form-group">
+												@Html.TextBox("Name", "", new { @class = "form-style", @id = "logname", @oninput = "this.value=(this.value.match('[A-Z a-z]+'))", maxlength = 50, @placeholder = "Your Full Name", @autocomplete = "off" })
+												<i class="input-icon uil uil-user"></i>
+											</div>
+											<div class="form-group mt-2">
+												@Html.TextBox("Email", "", new { @class = "form-style", @id = "logemail", maxlength = 50, @placeholder = "Your email", @autocomplete = "off" })
+												<i class="input-icon uil uil-at"></i>
+											</div>
+											<div class="form-group mt-2">
+												@Html.TextBox("Password", "", new { @class = "form-style", @id = "logpass", maxlength = 50, @placeholder = "Your password", @type = "password", @autocomplete = "off" })
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<div class="form-group mt-2">
+												@Html.TextBox("CPassword", "", new { @class = "form-style", @id = "logpass", maxlength = 50, @placeholder = "Re-confirm your password", @type = "password", @autocomplete = "off" })
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<div class="form-group mt-2">
+												@Html.TextBox("Phone", "", new { @class = "form-style", @id = "phone", @oninput = "this.value=(this.value.match('[0-9-]+'))", maxlength = 12, @placeholder = "Your Phone number", @autocomplete = "off" })
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<button type="submit" class="btn mt-4" id="submit">Sign Up</button>
+										}
 									</div>
 								</div>
 							</div>

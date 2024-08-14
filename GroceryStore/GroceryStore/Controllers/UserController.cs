@@ -46,12 +46,15 @@ namespace GroceryStore.Controllers
                 }
             }
         }
-        #endregion
+		#endregion
 
-        [Route("login")]
+		#region Sign In
+		[Route("login")]
         public IActionResult SignIn()
         {
             return View();
         }
-    }
+		#endregion
+
+	}
 }

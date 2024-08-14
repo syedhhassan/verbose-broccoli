@@ -5,16 +5,172 @@
       "PackagePath": "staticwebassets\\GroceryStore.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\content\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\ad-bg-pattern.png",
+      "PackagePath": "staticwebassets\\content\\img\\ad-bg-pattern.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\ad-image-1.png",
+      "PackagePath": "staticwebassets\\content\\img\\ad-image-1.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\ad-image-2.png",
+      "PackagePath": "staticwebassets\\content\\img\\ad-image-2.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\ad-image-3.png",
+      "PackagePath": "staticwebassets\\content\\img\\ad-image-3.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\ad-image-4.png",
+      "PackagePath": "staticwebassets\\content\\img\\ad-image-4.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\background-pattern.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\background-pattern.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\banner-image-1.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\banner-image-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\banner-image-2.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\banner-image-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\bg-dot-pattern.png",
+      "PackagePath": "staticwebassets\\content\\img\\bg-dot-pattern.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\bg-leaves-img-pattern.png",
+      "PackagePath": "staticwebassets\\content\\img\\bg-leaves-img-pattern.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\bg-leaves-pattern.png",
+      "PackagePath": "staticwebassets\\content\\img\\bg-leaves-pattern.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\bg-light.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\bg-light.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\bg-pattern-2.png",
+      "PackagePath": "staticwebassets\\content\\img\\bg-pattern-2.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\icon-animal-products-drumsticks.png",
+      "PackagePath": "staticwebassets\\content\\img\\icon-animal-products-drumsticks.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\icon-bread-baguette.png",
+      "PackagePath": "staticwebassets\\content\\img\\icon-bread-baguette.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\icon-bread-herb-flour.png",
+      "PackagePath": "staticwebassets\\content\\img\\icon-bread-herb-flour.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\icon-soft-drinks-bottle.png",
+      "PackagePath": "staticwebassets\\content\\img\\icon-soft-drinks-bottle.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\icon-vegetables-broccoli.png",
+      "PackagePath": "staticwebassets\\content\\img\\icon-vegetables-broccoli.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\icon-wine-glass-bottle.png",
+      "PackagePath": "staticwebassets\\content\\img\\icon-wine-glass-bottle.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\logo.png",
+      "PackagePath": "staticwebassets\\content\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\post-thumb-1.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\post-thumb-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\post-thumb-2.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\post-thumb-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\post-thumb-3.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\post-thumb-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\product-thumb-1.png",
+      "PackagePath": "staticwebassets\\content\\img\\product-thumb-1.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\product-thumb-11.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\product-thumb-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\product-thumb-12.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\product-thumb-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\product-thumb-13.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\product-thumb-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\product-thumb-14.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\product-thumb-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\product-thumb-2.png",
+      "PackagePath": "staticwebassets\\content\\img\\product-thumb-2.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\slide-1.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\slide-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\slide-2.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\slide-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\slide-3.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\slide-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\slide-4.jpg",
+      "PackagePath": "staticwebassets\\content\\img\\slide-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\css\\normalize.css"
+    },
+    {
       "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
       "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\user.css",
       "PackagePath": "staticwebassets\\css\\user.css"
     },
     {
-      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\vendor.css",
+      "PackagePath": "staticwebassets\\css\\vendor.css"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\js\\modernizr.js",
+      "PackagePath": "staticwebassets\\js\\modernizr.js"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
       "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\js\\site.js",
@@ -253,6 +409,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\lib\\jquery\\dist\\jquery-1.11.0.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-1.11.0.min.js"
+    },
+    {
       "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
@@ -263,10 +423,6 @@
     {
       "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\logo.png",
-      "PackagePath": "staticwebassets\\logo.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GroceryStore.Microsoft.AspNetCore.StaticWebAssets.props",
