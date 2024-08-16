@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets\\content\\img\\icon-soft-drinks-bottle.png"
     },
     {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\icon-spices-shaker.png",
+      "PackagePath": "staticwebassets\\content\\img\\icon-spices-shaker.png"
+    },
+    {
       "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\icon-vegetables-broccoli.png",
       "PackagePath": "staticwebassets\\content\\img\\icon-vegetables-broccoli.png"
     },
@@ -139,6 +143,206 @@
     {
       "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\img\\slide-4.jpg",
       "PackagePath": "staticwebassets\\content\\img\\slide-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\dairy\\Albany Whole Wheat Bread.png",
+      "PackagePath": "staticwebassets\\content\\products\\dairy\\Albany Whole Wheat Bread.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\dairy\\Amul Butter (Unsalted).png",
+      "PackagePath": "staticwebassets\\content\\products\\dairy\\Amul Butter (Unsalted).png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\dairy\\Amul Cheese Slices.png",
+      "PackagePath": "staticwebassets\\content\\products\\dairy\\Amul Cheese Slices.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\dairy\\Amul Malai Paneer.png",
+      "PackagePath": "staticwebassets\\content\\products\\dairy\\Amul Malai Paneer.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\dairy\\Amul Toned Milk.png",
+      "PackagePath": "staticwebassets\\content\\products\\dairy\\Amul Toned Milk.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\dairy\\Freshly Squeezed Coconut Milk.png",
+      "PackagePath": "staticwebassets\\content\\products\\dairy\\Freshly Squeezed Coconut Milk.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\dairy\\Gardenia White Bread.png",
+      "PackagePath": "staticwebassets\\content\\products\\dairy\\Gardenia White Bread.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\drinks\\Coca Cola Tin.png",
+      "PackagePath": "staticwebassets\\content\\products\\drinks\\Coca Cola Tin.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\drinks\\Coco Cola.png",
+      "PackagePath": "staticwebassets\\content\\products\\drinks\\Coco Cola.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\drinks\\Fanta Tin.png",
+      "PackagePath": "staticwebassets\\content\\products\\drinks\\Fanta Tin.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\drinks\\Fanta.png",
+      "PackagePath": "staticwebassets\\content\\products\\drinks\\Fanta.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\drinks\\Pepsi Tin.png",
+      "PackagePath": "staticwebassets\\content\\products\\drinks\\Pepsi Tin.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\drinks\\Pepsi.png",
+      "PackagePath": "staticwebassets\\content\\products\\drinks\\Pepsi.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\fruits\\Apple.png",
+      "PackagePath": "staticwebassets\\content\\products\\fruits\\Apple.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\fruits\\Bananas.png",
+      "PackagePath": "staticwebassets\\content\\products\\fruits\\Bananas.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\fruits\\Lemon.png",
+      "PackagePath": "staticwebassets\\content\\products\\fruits\\Lemon.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\fruits\\Mango.png",
+      "PackagePath": "staticwebassets\\content\\products\\fruits\\Mango.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\fruits\\Orange.png",
+      "PackagePath": "staticwebassets\\content\\products\\fruits\\Orange.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\fruits\\Pineapple.png",
+      "PackagePath": "staticwebassets\\content\\products\\fruits\\Pineapple.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\fruits\\Pomegranate.png",
+      "PackagePath": "staticwebassets\\content\\products\\fruits\\Pomegranate.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\fruits\\Strawberry.png",
+      "PackagePath": "staticwebassets\\content\\products\\fruits\\Strawberry.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\meat\\Chicken (Full).png",
+      "PackagePath": "staticwebassets\\content\\products\\meat\\Chicken (Full).png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\meat\\Chicken Breasts.png",
+      "PackagePath": "staticwebassets\\content\\products\\meat\\Chicken Breasts.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\meat\\Chicken Legs.png",
+      "PackagePath": "staticwebassets\\content\\products\\meat\\Chicken Legs.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\meat\\Crabs.png",
+      "PackagePath": "staticwebassets\\content\\products\\meat\\Crabs.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\meat\\Eggs (12).png",
+      "PackagePath": "staticwebassets\\content\\products\\meat\\Eggs (12).png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\meat\\Eggs.png",
+      "PackagePath": "staticwebassets\\content\\products\\meat\\Eggs.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\meat\\Fish.png",
+      "PackagePath": "staticwebassets\\content\\products\\meat\\Fish.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\meat\\Mutton.png",
+      "PackagePath": "staticwebassets\\content\\products\\meat\\Mutton.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\meat\\Prawns.png",
+      "PackagePath": "staticwebassets\\content\\products\\meat\\Prawns.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\spices\\Everest Black Pepper.png",
+      "PackagePath": "staticwebassets\\content\\products\\spices\\Everest Black Pepper.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\spices\\Everest Chhole Masala.png",
+      "PackagePath": "staticwebassets\\content\\products\\spices\\Everest Chhole Masala.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\spices\\Everest Chicken Tandoori Masala.png",
+      "PackagePath": "staticwebassets\\content\\products\\spices\\Everest Chicken Tandoori Masala.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\spices\\Everest Cumin Powder.png",
+      "PackagePath": "staticwebassets\\content\\products\\spices\\Everest Cumin Powder.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\spices\\Everest Meat Masala.png",
+      "PackagePath": "staticwebassets\\content\\products\\spices\\Everest Meat Masala.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\spices\\Everest Pav Bhaji Masala.png",
+      "PackagePath": "staticwebassets\\content\\products\\spices\\Everest Pav Bhaji Masala.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\spices\\Everest Sabji Masala.png",
+      "PackagePath": "staticwebassets\\content\\products\\spices\\Everest Sabji Masala.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\spices\\Everest Shahi Biryani Masala.png",
+      "PackagePath": "staticwebassets\\content\\products\\spices\\Everest Shahi Biryani Masala.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Aashirvaad Select Atta.png",
+      "PackagePath": "staticwebassets\\content\\products\\staple\\Aashirvaad Select Atta.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Cholia's Maida.png",
+      "PackagePath": "staticwebassets\\content\\products\\staple\\Cholia's Maida.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Daawat Briyani Rice.png",
+      "PackagePath": "staticwebassets\\content\\products\\staple\\Daawat Briyani Rice.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Pilsbury Whole Wheat Flour.png",
+      "PackagePath": "staticwebassets\\content\\products\\staple\\Pilsbury Whole Wheat Flour.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Quaker Oats.png",
+      "PackagePath": "staticwebassets\\content\\products\\staple\\Quaker Oats.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Sante Granola (Chocolate).png",
+      "PackagePath": "staticwebassets\\content\\products\\staple\\Sante Granola (Chocolate).png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Tata Chana Dal.png",
+      "PackagePath": "staticwebassets\\content\\products\\staple\\Tata Chana Dal.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\vegetables\\Bell Peppers (Green).png",
+      "PackagePath": "staticwebassets\\content\\products\\vegetables\\Bell Peppers (Green).png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\vegetables\\Green Chillis.png",
+      "PackagePath": "staticwebassets\\content\\products\\vegetables\\Green Chillis.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\vegetables\\Maize.png",
+      "PackagePath": "staticwebassets\\content\\products\\vegetables\\Maize.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\vegetables\\Potato.png",
+      "PackagePath": "staticwebassets\\content\\products\\vegetables\\Potato.png"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\vegetables\\Tomato.png",
+      "PackagePath": "staticwebassets\\content\\products\\vegetables\\Tomato.png"
     },
     {
       "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\normalize.css",

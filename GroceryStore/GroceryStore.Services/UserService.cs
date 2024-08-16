@@ -45,6 +45,12 @@ namespace GroceryStore.Services
         }
         #endregion
 
+        #region Sign In
+        /// <summary>
+        /// Sign In
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public string SignIn(UserModel user)
         {
             var user_creds = _userRepository.GetCreds(user.Email);
@@ -67,5 +73,7 @@ namespace GroceryStore.Services
                 return "";
             }
         }
+        #endregion
+    
     }
 }

@@ -7,9 +7,10 @@ namespace GroceryStore.Controllers
 {
     public class UserController : Controller
     {
-        #region Sign Up 
-        [Route("register")]
-        public IActionResult SignUp()
+
+		#region Sign In
+		[Route("login")]
+        public IActionResult SignIn()
         {
             return View();
         }
@@ -48,13 +49,47 @@ namespace GroceryStore.Controllers
         }
 		#endregion
 
-		#region Sign In
-		[Route("login")]
-        public IActionResult SignIn()
+        #region Sign in post action
+        /// <summary>
+        /// Sign in post action
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("login")]
+        public async Task<ActionResult> SignIn(UserModel user)
         {
-            return View();
+            string details = "";
+            using (HttpClient client = new HttpClient())
+            {
+                string requestUrl = $"https://localhost:7083/api/UserAPI/login";
+                var jsonContent = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json");
+                var response = await client.PostAsync(requestUrl, jsonContent);
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseString = await response.Content.ReadAsStringAsync();
+                    if (responseString != null && user.Email != null)
+                    {
+                        HttpContext.Session.SetString("Email", user.Email);
+                        HttpContext.Session.SetString("Role", details);
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        TempData["ToastrMessage"] = "Sign in failed!";
+                        TempData["ToastrType"] = "error";
+                        return View();
+                    }
+                }
+                else
+                {
+                    TempData["ToastrMessage"] = "Sign in failed!";
+                    TempData["ToastrType"] = "error";
+                    return View();
+                }
+            }
         }
-		#endregion
+        #endregion
 
-	}
+    }
 }

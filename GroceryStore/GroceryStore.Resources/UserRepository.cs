@@ -40,7 +40,7 @@ namespace GroceryStore.Resources
             using (SqlConnection connection = new SqlConnection(_connectionstring))
             {
                 try
-                {
+                {   
                     connection.Open();
                     connection.Execute(SQLQueries.sign_up_query, new { NAME = user.Name, EMAIL = user.Email, PASSWORDHASH = user.PasswordHash, SALT = user.PasswordSalt, PHONE = user.Phone, ADDRESS = user.Address });
                 }
