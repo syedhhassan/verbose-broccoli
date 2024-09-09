@@ -1,5 +1,6 @@
 ﻿using GroceryStore.Core.IRepositories;
 using GroceryStore.Core.IServices;
+using GroceryStore.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,16 @@ namespace GroceryStore.Services
 
         #endregion
 
+        #region Getting products
+        /// <summary>
+        /// Getting products
+        /// </summary>
+        /// <returns></returns>
+        public List<ProductModel> GetProducts()
+        {
+            return _productRepository.GetProducts();
+        }
+        #endregion
 
     }
 }

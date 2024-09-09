@@ -18,15 +18,9 @@ namespace GroceryStore.Core.Models
 
         public string? Quantity { get; set; }
 
-        public enum Category
-        {
-            Dairy,
-            Produce,
-            Staples,
-            Snacks,
-            Drinks,
-            Winery,
-            Meat
-        }
+        public string? Category { get; set; }
+
+        public string? Path { get; set; }
+
     }
 }

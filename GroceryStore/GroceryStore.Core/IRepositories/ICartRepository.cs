@@ -1,5 +1,4 @@
-﻿using GroceryStore.Core.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace GroceryStore.Core.IRepositories
 {
-    public interface IProductRepository
+    public interface ICartRepository
     {
-        public List<ProductModel> GetProducts();
-
     }
 }

@@ -12,15 +12,8 @@
 
         public string? Quantity { get; set; }
 
-        public enum Category
-        {
-            dairy,
-            fruits,
-            vegetables,
-            staple,
-            drinks,
-            spices,
-            meat
-        }
+        public string? Category { get; set; }
+
+        public string? Path { get; set; }
     }
 }

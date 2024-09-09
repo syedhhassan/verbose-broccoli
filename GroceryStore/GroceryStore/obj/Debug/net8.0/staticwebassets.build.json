@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8YS6Eump11ET6ENQrSisskWJSsMlN3p4zDKRG+hxsnU=",
+  "Hash": "2NV8NCUZxr7BprVeLVYJOCYsF7NtzHO+bS3pvwRMJwU=",
   "Source": "GroceryStore",
   "BasePath": "_content/GroceryStore",
   "Mode": "Default",
@@ -1442,12 +1442,12 @@
       "OriginalItemSpec": "wwwroot\\content\\products\\spices\\Everest Shahi Biryani Masala.png"
     },
     {
-      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Aashirvaad Select Atta.png",
+      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staples\\Aashirvaad Select Atta.png",
       "SourceId": "GroceryStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\",
       "BasePath": "_content/GroceryStore",
-      "RelativePath": "content/products/staple/Aashirvaad Select Atta.png",
+      "RelativePath": "content/products/staples/Aashirvaad Select Atta.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1458,15 +1458,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\products\\staple\\Aashirvaad Select Atta.png"
+      "OriginalItemSpec": "wwwroot\\content\\products\\staples\\Aashirvaad Select Atta.png"
     },
     {
-      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Cholia's Maida.png",
+      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staples\\Cholia's Maida.png",
       "SourceId": "GroceryStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\",
       "BasePath": "_content/GroceryStore",
-      "RelativePath": "content/products/staple/Cholia's Maida.png",
+      "RelativePath": "content/products/staples/Cholia's Maida.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1477,15 +1477,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\products\\staple\\Cholia's Maida.png"
+      "OriginalItemSpec": "wwwroot\\content\\products\\staples\\Cholia's Maida.png"
     },
     {
-      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Daawat Briyani Rice.png",
+      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staples\\Daawat Briyani Rice.png",
       "SourceId": "GroceryStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\",
       "BasePath": "_content/GroceryStore",
-      "RelativePath": "content/products/staple/Daawat Briyani Rice.png",
+      "RelativePath": "content/products/staples/Daawat Briyani Rice.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1496,15 +1496,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\products\\staple\\Daawat Briyani Rice.png"
+      "OriginalItemSpec": "wwwroot\\content\\products\\staples\\Daawat Briyani Rice.png"
     },
     {
-      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Pilsbury Whole Wheat Flour.png",
+      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staples\\Pilsbury Whole Wheat Flour.png",
       "SourceId": "GroceryStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\",
       "BasePath": "_content/GroceryStore",
-      "RelativePath": "content/products/staple/Pilsbury Whole Wheat Flour.png",
+      "RelativePath": "content/products/staples/Pilsbury Whole Wheat Flour.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1515,15 +1515,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\products\\staple\\Pilsbury Whole Wheat Flour.png"
+      "OriginalItemSpec": "wwwroot\\content\\products\\staples\\Pilsbury Whole Wheat Flour.png"
     },
     {
-      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Quaker Oats.png",
+      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staples\\Quaker Oats.png",
       "SourceId": "GroceryStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\",
       "BasePath": "_content/GroceryStore",
-      "RelativePath": "content/products/staple/Quaker Oats.png",
+      "RelativePath": "content/products/staples/Quaker Oats.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1534,15 +1534,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\products\\staple\\Quaker Oats.png"
+      "OriginalItemSpec": "wwwroot\\content\\products\\staples\\Quaker Oats.png"
     },
     {
-      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Sante Granola (Chocolate).png",
+      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staples\\Sante Granola (Chocolate).png",
       "SourceId": "GroceryStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\",
       "BasePath": "_content/GroceryStore",
-      "RelativePath": "content/products/staple/Sante Granola (Chocolate).png",
+      "RelativePath": "content/products/staples/Sante Granola (Chocolate).png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1553,15 +1553,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\products\\staple\\Sante Granola (Chocolate).png"
+      "OriginalItemSpec": "wwwroot\\content\\products\\staples\\Sante Granola (Chocolate).png"
     },
     {
-      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staple\\Tata Chana Dal.png",
+      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\staples\\Tata Chana Dal.png",
       "SourceId": "GroceryStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\",
       "BasePath": "_content/GroceryStore",
-      "RelativePath": "content/products/staple/Tata Chana Dal.png",
+      "RelativePath": "content/products/staples/Tata Chana Dal.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1572,7 +1572,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\products\\staple\\Tata Chana Dal.png"
+      "OriginalItemSpec": "wwwroot\\content\\products\\staples\\Tata Chana Dal.png"
     },
     {
       "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\content\\products\\vegetables\\Bell Peppers (Green).png",

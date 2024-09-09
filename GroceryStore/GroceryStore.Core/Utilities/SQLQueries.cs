@@ -12,5 +12,9 @@ namespace GroceryStore.Core.Utilities
 
         public static string get_creds_query = "SELECT NAME, SALT, PASSWORDHASH FROM STS892_SHOPPER WHERE EMAIL = @EMAIL AND IS_ACTIVE = 1;";
 
+        public static string get_products_query = "SELECT NAME, PRICE, QUANTITY, CATEGORY, PATH FROM STS892_PRODUCTS;";
+
+        public static string get_products_by_category_query = "SELECT NAME, PRICE, QUANTITY, PATH FROM STS892_PRODUCTS WHERE CATEGORY = @CATEGORY;";
+
     }
 }
