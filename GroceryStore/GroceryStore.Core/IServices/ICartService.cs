@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GroceryStore.Core.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,8 @@ namespace GroceryStore.Core.IServices
 {
     public interface ICartService
     {
+        public List<CartModel> FetchCart(Guid UserId);
+
+        public bool AddToCart(CartModel cart);
     }
 }

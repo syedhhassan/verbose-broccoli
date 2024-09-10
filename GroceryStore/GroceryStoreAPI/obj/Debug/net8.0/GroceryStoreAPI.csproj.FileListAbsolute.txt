@@ -1,3 +1,10 @@
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.csproj.AssemblyReference.cache
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.AssemblyInfoInputs.cache
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.AssemblyInfo.cs
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.sourcelink.json
 C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\bin\Debug\net8.0\appsettings.json
 C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\bin\Debug\net8.0\GroceryStoreAPI.exe
@@ -26,14 +33,6 @@ C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\bin\Debug\net8.
 C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\bin\Debug\net8.0\GroceryStore.Core.pdb
 C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\bin\Debug\net8.0\GroceryStore.Resources.pdb
 C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\bin\Debug\net8.0\GroceryStore.Services.pdb
-C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.csproj.AssemblyReference.cache
-C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.AssemblyInfoInputs.cache
-C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.AssemblyInfo.cs
-C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.csproj.CoreCompileInputs.cache
-C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\GroceryStoreAPI.sourcelink.json
 C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStoreAPI\obj\Debug\net8.0\staticwebassets\msbuild.GroceryStoreAPI.Microsoft.AspNetCore.StaticWebAssets.props

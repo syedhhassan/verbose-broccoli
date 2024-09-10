@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Runtime.Intrinsics.X86;
+using System.Xml.Linq;
+using System;
 
-namespace GroceryStore.Core.Models
+namespace GroceryStore.Models
 {
     public class CartModel
     {
@@ -17,5 +17,6 @@ namespace GroceryStore.Core.Models
         public int Quantity { get; set; }
 
         public Guid UserId { get; set; }
+        
     }
 }

@@ -49,7 +49,7 @@ namespace GroceryStoreAPI.Controllers
         /// <returns></returns>
         [Route("login")]
         [HttpPost]
-        public string SignIn(UserModel user)
+        public Dictionary<string, string> SignIn(UserModel user)
         {
             return _userService.SignIn(user);
         }

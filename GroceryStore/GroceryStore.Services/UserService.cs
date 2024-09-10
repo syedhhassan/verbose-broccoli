@@ -51,8 +51,9 @@ namespace GroceryStore.Services
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
-        public string SignIn(UserModel user)
+        public Dictionary<string, string> SignIn(UserModel user)
         {
+            Dictionary<string, string> details = new Dictionary<string, string>();
             var user_creds = _userRepository.GetCreds(user.Email);
             byte[] user_salt = user_creds.PasswordSalt;
             if (user_salt != null)
@@ -61,16 +62,18 @@ namespace GroceryStore.Services
                 //Comparing hash values
                 if (user_hashed == user_creds.PasswordHash)
                 {
-                    return user_creds.Name;
+                    details["Name"] = user_creds.Name;
+                    details["UserId"] = user_creds.UserId.ToString();
+                    return details;
                 }
                 else
                 {
-                    return "";
+                    return [];
                 }
             }
             else
             {
-                return "";
+                return [];
             }
         }
         #endregion

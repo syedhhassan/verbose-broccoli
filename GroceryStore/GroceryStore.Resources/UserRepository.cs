@@ -69,6 +69,7 @@ namespace GroceryStore.Resources
                 {
                     connection.Open();
                     var creds = connection.QuerySingle(SQLQueries.get_creds_query, new { EMAIL = Email });
+                    user.UserId = creds.USERID;
                     user.Name = creds.NAME;
                     user.PasswordSalt = creds.SALT;
                     user.PasswordHash = creds.PASSWORDHASH;

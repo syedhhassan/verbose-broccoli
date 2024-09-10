@@ -1,0 +1,17 @@
+﻿<script>
+
+    function AddToCart(ProductId, Price, ProductName) {
+        $.ajax({
+            url: "/Cart/addtocart",
+            type: "POST",
+            data: { ProductId: ProductId, Price: Price, ProductName: ProductName },
+            success: function (count) {
+                $("#quantity").html(count);
+            },
+            error: function (err) {
+                console.error(err);
+            }
+        }); 
+    }
+
+</script>

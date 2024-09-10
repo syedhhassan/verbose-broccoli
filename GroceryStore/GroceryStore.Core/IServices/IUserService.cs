@@ -11,6 +11,6 @@ namespace GroceryStore.Core.IServices
     {
         public bool SignUp(UserModel user);
 
-        public string SignIn(UserModel user);
+        public Dictionary<string, string> SignIn(UserModel user);
     }
 }

@@ -16,23 +16,33 @@ namespace GroceryStore.Controllers
         [Route("mart")]
         public async Task<ActionResult> Mart()
         {
-            List<ProductModel> products = new List<ProductModel>();
-            using (HttpClient client = new HttpClient())
+            if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")))
             {
-                string requestUrl = $"https://localhost:7083/api/ProductAPI/mart";
-                var response = await client.GetAsync(requestUrl);
+                List<ProductModel> products = new List<ProductModel>();
+                using (HttpClient client = new HttpClient())
+                {
+                    string requestUrl = $"https://localhost:7083/api/ProductAPI/mart";
+                    var response = await client.GetAsync(requestUrl);
 
-                if (response.IsSuccessStatusCode)
-                {
-                    var responseString = await response.Content.ReadAsStringAsync();
-                    products = JsonConvert.DeserializeObject<List<ProductModel>>(responseString);
-                    return View(products);
-                }
-                else
-                {
-                    return RedirectToAction("Index", "Home");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var responseString = await response.Content.ReadAsStringAsync();
+                        products = JsonConvert.DeserializeObject<List<ProductModel>>(responseString);
+                        return View(products);
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
             }
+            else
+            {
+                TempData["ToastrMessage"] = "Sign in first!";
+                TempData["ToastrType"] = "warning";
+                return RedirectToAction("SignIn", "User");
+            }
+            
         }
         #endregion
 

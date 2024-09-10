@@ -12,6 +12,7 @@ namespace GroceryStore.Controllers
 		[Route("login")]
         public IActionResult SignIn()
         {
+            HttpContext.Session.Clear();
             return View();
         }
         #endregion
@@ -35,6 +36,8 @@ namespace GroceryStore.Controllers
 
                 if (response.IsSuccessStatusCode)
                 {
+                    HttpContext.Session.SetString("Email", user.Email);
+                    HttpContext.Session.SetString("Name", user.Name);
                     TempData["ToastrMessage"] = "Signed up successfully. You can sign in.";
                     TempData["ToastrType"] = "success";
                     return RedirectToAction("Index", "Home");
@@ -59,7 +62,6 @@ namespace GroceryStore.Controllers
         [Route("login")]
         public async Task<ActionResult> SignIn(UserModel user)
         {
-            string details = "";
             using (HttpClient client = new HttpClient())
             {
                 string requestUrl = $"https://localhost:7083/api/UserAPI/login";
@@ -68,11 +70,15 @@ namespace GroceryStore.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     var responseString = await response.Content.ReadAsStringAsync();
+                    var responseData = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseString);
+                    var fan = responseData.GetType();
                     if (responseString != null && user.Email != null)
                     {
+                        TempData["Email"] = user.Email;
                         HttpContext.Session.SetString("Email", user.Email);
-                        HttpContext.Session.SetString("Role", details);
-                        return RedirectToAction("Index", "Home");
+                        HttpContext.Session.SetString("UserId", responseData["UserId"]);
+                        HttpContext.Session.SetString("Name", responseData["Name"]);
+                        return RedirectToAction("Mart", "Product");
                     }
                     else
                     {
