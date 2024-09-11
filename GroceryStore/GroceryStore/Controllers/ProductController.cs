@@ -42,7 +42,7 @@ namespace GroceryStore.Controllers
                 TempData["ToastrType"] = "warning";
                 return RedirectToAction("SignIn", "User");
             }
-            
+
         }
         #endregion
 

@@ -9,10 +9,15 @@ namespace GroceryStore.Core.IRepositories
 {
     public interface ICartRepository
     {
-        public List<CartModel> FetchCart(Guid UserId);
+        public List<CartResponseModel> FetchCart(Guid UserId);
 
-        public bool AddToCart(CartModel cart);
+        public int AddToCart(CartRequestModel cart);
 
-        public bool RemoveFromCart(CartModel cart);
+        public int RemoveFromCart(CartRequestModel cart);
+
+        public bool DeleteItem(int ProductId, Guid UserId);
+
+        public bool DeleteCart(Guid UserId);
+
     }
 }

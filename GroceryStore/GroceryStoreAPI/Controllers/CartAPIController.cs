@@ -9,6 +9,7 @@ namespace GroceryStoreAPI.Controllers
     [ApiController]
     public class CartAPIController : ControllerBase
     {
+
         #region Declaration
 
         private readonly IHttpContextAccessor _httpContextAccessor;
@@ -34,7 +35,7 @@ namespace GroceryStoreAPI.Controllers
         /// <returns></returns>
         [Route("fetchcart")]
         [HttpGet]
-        public List<CartModel> FetchCart(Guid UserId)
+        public List<CartResponseModel> FetchCart(Guid UserId)
         {
             return _cartService.FetchCart(UserId);
         }
@@ -48,37 +49,54 @@ namespace GroceryStoreAPI.Controllers
         /// <returns></returns>
         [Route("addtocart")]
         [HttpPost]
-        public bool AddToCart(CartModel cart)
+        public int AddToCart(CartRequestModel cart)
         {
             return _cartService.AddToCart(cart);
         }
         #endregion
+
+        #region Remove item from cart
+        /// <summary>
+        /// Remove item from cart
+        /// </summary>
+        /// <param name="cart"></param>
+        /// <returns></returns>
+        [Route("removefromcart")]
+        [HttpPost]
+        public int RemoveFromCart(CartRequestModel cart)
+        {
+            return _cartService.RemoveFromCart(cart);
+        }
+        #endregion
+
+        #region Delete one item fully from cart
+        /// <summary>
+        /// Delete one item fully from cart
+        /// </summary>
+        /// <param name="ProductId"></param>
+        /// <param name="UserId"></param>
+        /// <returns></returns>
+        [Route("deleteitem")]
+        [HttpPost]
+        public List<CartResponseModel> DeleteItem(int ProductId, Guid UserId)
+        {
+            return _cartService.DeleteItem(ProductId, UserId);
+        }
+        #endregion
+
+        #region Delete cart for user
+        /// <summary>
+        /// Delete cart for user
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <returns></returns>
+        [Route("deletecart")]
+        [HttpPost]
+        public bool DeleteCart(Guid UserId)
+        {
+            return _cartService.DeleteCart(UserId);
+        }
+        #endregion
+
     }
 }
-
-#region Cart Schema
-
-//SELECT
-//    o.OrderID,
-//    o.CustomerID,
-//    o.OrderDate,
-//    CONCAT(o.ShippingStreetAddress, ', ', o.ShippingCity, ', ', o.ShippingState, ' ', o.ShippingZipCode) AS Address,
-//    o.TotalAmount,
-//    o.CreatedAt,
-//    o.UpdatedAt,
-//    oi.OrderItemID,
-//    oi.ProductID,
-//    p.ProductName, -- Assumes there is a ProductName field in the Products table
-//    oi.Quantity,
-//    oi.UnitPrice,
-//    oi.TotalPrice
-//FROM 
-//    Orders o
-//JOIN 
-//    OrderItems oi ON o.OrderID = oi.OrderID
-//JOIN 
-//    Products p ON oi.ProductID = p.ProductID
-//WHERE 
-//    o.CustomerID = ?; --Replace ? with the specific CustomerID you want to query
-
-#endregion

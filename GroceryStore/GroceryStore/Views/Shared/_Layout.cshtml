@@ -149,20 +149,10 @@
                                 <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg>
                             </a>
                         </li>
-                        <li class="d-lg-none">
-                            <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" id="opencart">
-                                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
-                            </a>
-                        </li>
-                        <li class="d-lg-none">
-                            <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
-                                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#search"></use></svg>
-                            </a>
-                        </li>
                     </ul>
 
                     <div class="cart text-end d-none d-lg-block dropdown">
-                        <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                        <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" onclick="FetchCart()">
                             <span class="fs-6 text-muted dropdown-toggle">Your Cart</span>
                             <span class="cart-total fs-5 fw-bold">$1290.00</span>
                         </button>
@@ -333,8 +323,8 @@
         </div>
     </div>
 
-@*     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- *@
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
@@ -357,7 +347,7 @@
     <script src="~/js/script.js"></script>
     @*     <script src="~/js/modernizr.js"></script>*@
     @await RenderSectionAsync("Scripts", required: false)
-    @await Html.PartialAsync("_Cart", new GroceryStore.Models.CartModel())
+    @await Html.PartialAsync("_Cart", new List<GroceryStore.Models.CartResponseModel>())
     @await Html.PartialAsync("_Profile", new GroceryStore.Models.UserModel())
     @await Html.PartialAsync("_AjaxCalls")
 </body>

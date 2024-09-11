@@ -1,17 +1,64 @@
 ﻿<script>
 
-    function AddToCart(ProductId, Price, ProductName) {
+    function FetchCart() {
+        console.log("Hello")
         $.ajax({
-            url: "/Cart/addtocart",
-            type: "POST",
-            data: { ProductId: ProductId, Price: Price, ProductName: ProductName },
-            success: function (count) {
-                $("#quantity").html(count);
+            url: "/Cart/FetchCart",
+            type: "GET",
+            success: function (response) {
+                if (response.error) {
+                    console.error(response.error);
+                } else {
+                }
             },
             error: function (err) {
                 console.error(err);
             }
-        }); 
+        });
+    }
+
+    function AddToCart(ProductId) {
+        console.log(ProductId)
+        $.ajax({
+            url: "/Cart/AddToCart",
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({
+                ProductId: ProductId,
+            }),
+            success: function (response) {
+                if (response.error) {
+                    console.error(response.error);
+                } else {
+                    $("#quantity").html(response);
+                }
+            },
+            error: function (err) {
+                console.error(err);
+            }
+        });
+    }
+
+    function RemoveFromCart(ProductId) {
+        console.log(ProductId)
+        $.ajax({
+            url: "/Cart/RemoveFromCart",
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({
+                ProductId: ProductId,
+            }),
+            success: function (response) {
+                if (response.error) {
+                    console.error(response.error);
+                } else {
+                    $("#quantity").html(response);
+                }
+            },
+            error: function (err) {
+                console.error(err);
+            }
+        });
     }
 
 </script>

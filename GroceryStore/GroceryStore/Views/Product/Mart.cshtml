@@ -39,13 +39,13 @@
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="input-group product-qty">
                                                     <span class="input-group-btn">
-                                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus">
+                                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus" onclick="RemoveFromCart(@Model[i].ProductId)">
                                                             <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
                                                         </button>
                                                     </span>
                                                     <p type="text" id="quantity" name="quantity" class="form-control input-number">0</p>
                                                     <span class="input-group-btn">
-                                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId, @Model[i].Price, @Model[i].Name)">
+                                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId)">
                                                             <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
                                                         </button>
                                                     </span>
@@ -74,13 +74,13 @@
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div class="input-group product-qty">
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus">
+                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus" onclick="RemoveFromCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
                                                             </button>
                                                         </span>
                                                         <p type="text" id="quantity" name="quantity" class="form-control input-number">0</p>
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId, @Model[i].Price, @Model[i].Name)">
+                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
                                                             </button>
                                                         </span>
@@ -110,13 +110,13 @@
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div class="input-group product-qty">
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus">
+                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus" onclick="RemoveFromCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
                                                             </button>
                                                         </span>
                                                         <p type="text" id="quantity" name="quantity" class="form-control input-number">0</p>
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId, @Model[i].Price, @Model[i].Name)">
+                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
                                                             </button>
                                                         </span>
@@ -146,13 +146,13 @@
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div class="input-group product-qty">
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus">
+                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus" onclick="RemoveFromCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
                                                             </button>
                                                         </span>
                                                         <p type="text" id="quantity" name="quantity" class="form-control input-number">0</p>
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId, @Model[i].Price, @Model[i].Name)">
+                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
                                                             </button>
                                                         </span>
@@ -182,13 +182,13 @@
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div class="input-group product-qty">
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus">
+                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus" onclick="RemoveFromCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
                                                             </button>
                                                         </span>
                                                         <p type="text" id="quantity" name="quantity" class="form-control input-number">0</p>
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId, @Model[i].Price, @Model[i].Name)">
+                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
                                                             </button>
                                                         </span>
@@ -218,13 +218,13 @@
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div class="input-group product-qty">
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus">
+                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus" onclick="RemoveFromCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
                                                             </button>
                                                         </span>
                                                         <p type="text" id="quantity" name="quantity" class="form-control input-number">0</p>
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId, @Model[i].Price, @Model[i].Name)">
+                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
                                                             </button>
                                                         </span>
@@ -254,13 +254,13 @@
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div class="input-group product-qty">
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus">
+                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus" onclick="RemoveFromCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
                                                             </button>
                                                         </span>
                                                         <p type="text" id="quantity" name="quantity" class="form-control input-number">0</p>
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId, @Model[i].Price, @Model[i].Name)">
+                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
                                                             </button>
                                                         </span>
@@ -290,13 +290,13 @@
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <div class="input-group product-qty">
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus">
+                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus" onclick="RemoveFromCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
                                                             </button>
                                                         </span>
                                                         <p type="text" id="quantity" name="quantity" class="form-control input-number">0</p>
                                                         <span class="input-group-btn">
-                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId, @Model[i].Price, @Model[i].Name)">
+                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId)">
                                                                 <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
                                                             </button>
                                                         </span>
@@ -315,21 +315,3 @@
         </div>
     </div>
 </section>
-
-@* <script>
-
-    function AddToCart(int ProductId, decimal Price, string ProductName) {
-        $.ajax({
-            url: "/Cart/addtocart",
-            type: "POST",
-            data: { ProductId: ProductId, Price: Price, ProductName: ProductName },
-            success: function (count) {
-                $("#quantity").html(count)
-            },
-            error: function (err) {
-                console.error(err);
-            }
-        }
-    }
-
-</script> *@
