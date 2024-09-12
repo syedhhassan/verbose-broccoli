@@ -31,12 +31,13 @@ namespace GroceryStore.Resources
 
         #endregion
 
-        #region Getting products
+        #region Get products
         /// <summary>
-        /// Getting products
+        /// Get products
         /// </summary>
+        /// <param name="UserId"></param>
         /// <returns></returns>
-        public List<ProductModel> GetProducts()
+        public List<ProductModel> GetProducts(Guid UserId)
         {
             List<ProductModel> products = new List<ProductModel>();
 
@@ -45,7 +46,7 @@ namespace GroceryStore.Resources
                 try
                 {
                     connection.Open();
-                    products = connection.Query<ProductModel>(SQLQueries.get_products_query).ToList();
+                    products = connection.Query<ProductModel>(SQLQueries.get_products_query, new { @USERID = UserId }).ToList();
                 }
                 catch (Exception ex)
                 {
@@ -55,6 +56,32 @@ namespace GroceryStore.Resources
             return products;
         }
         #endregion
-     
+
+        #region Search products
+        /// <summary>
+        /// Search products
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <param name="SearchQuery"></param>
+        /// <returns></returns>
+        public List<ProductModel> SearchProducts(Guid UserId, string SearchQuery)
+        {
+            List<ProductModel> products = new List<ProductModel>();
+
+            using (SqlConnection connection = new SqlConnection(_connectionstring))
+            {
+                try
+                {
+                    connection.Open();
+                    products = connection.Query<ProductModel>(SQLQueries.product_search_query, new { @USERID = UserId, @SEARCHQUERY = SearchQuery }).ToList();
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                }
+            }
+            return products;
+        }
+        #endregion
     }
 }

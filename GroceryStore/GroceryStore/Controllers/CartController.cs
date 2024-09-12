@@ -14,7 +14,7 @@ namespace GroceryStore.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public async Task<IActionResult> FetchCart()
+        public async Task<JsonResult> FetchCart()
         {
             if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")))
             {
@@ -29,15 +29,15 @@ namespace GroceryStore.Controllers
                     {
                         var responseString = await response.Content.ReadAsStringAsync();
                         cart = JsonConvert.DeserializeObject<List<CartResponseModel>>(responseString);
-                        return View(cart);
+                        return Json(cart);
                     }
                     else
                     {
-                        return View(cart);
+                        return Json(cart);
                     }
                 }
             }
-            return View(new { error = "User not logged in" });
+            return Json(new { error = "User not logged in" });
         }
         #endregion
 

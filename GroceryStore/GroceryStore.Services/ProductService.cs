@@ -26,14 +26,27 @@ namespace GroceryStore.Services
 
         #endregion
 
-        #region Getting products
+        #region Get products
         /// <summary>
-        /// Getting products
+        /// Get products
         /// </summary>
         /// <returns></returns>
-        public List<ProductModel> GetProducts()
+        public List<ProductModel> GetProducts(Guid UserId)
         {
-            return _productRepository.GetProducts();
+            return _productRepository.GetProducts(UserId);
+        }
+        #endregion
+
+        #region Search products
+        /// <summary>
+        /// Search products
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <param name="SearchQuery"></param>
+        /// <returns></returns>
+        public List<ProductModel> SearchProducts(Guid UserId, string SearchQuery)
+        {
+            return _productRepository.SearchProducts(UserId, SearchQuery);
         }
         #endregion
 

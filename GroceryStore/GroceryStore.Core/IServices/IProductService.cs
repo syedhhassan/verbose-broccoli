@@ -9,7 +9,9 @@ namespace GroceryStore.Core.IServices
 {
     public interface IProductService
     {
-        public List<ProductModel> GetProducts();
+        public List<ProductModel> GetProducts(Guid UserId);
+
+        public List<ProductModel> SearchProducts(Guid UserId, string SearchQuery);
 
     }
 }

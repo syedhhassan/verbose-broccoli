@@ -1,0 +1,52 @@
+﻿<link rel="stylesheet" href="~/css/payment.css" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+<div class="container p-0">
+    <div class="card px-4" style="background-color: #E6F3FB">
+        <p class="h8 py-3">Payment Details</p>
+        <div class="row gx-3">
+            <div class="col-12">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">Card Holder Name</p>
+                    <input class="form-control mb-3" style="color: white" type="text" oninput="this.value=(this.value.match('[A-Z a-z]+'))">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">Card Number</p>
+                    <input class="form-control mb-3" style="color: white" type="text" id="cardnumber" minlength=19 maxlength=19 oninput ="this.value=(this.value.match('[0-9-]+'))">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">Expiry Date</p>
+                    <input class="form-control mb-3" style="color: white" type="text" id="date" minlength=7 maxlength=7 oninput="this.value=(this.value.match('[0-9-]+'))">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">CVV/CVC</p>
+                    <input class="form-control mb-3 pt-2" style="color: white" type="password" id="cvv" minlength=3 maxlength=3 oninput="this.value=(this.value.match('[0-9]+'))">
+                </div>
+            </div>
+            <div class="col-12">
+                @using (Html.BeginForm("NewOrder", "Order", FormMethod.Post, new { @id = "CheckOut" }))
+                {
+                    <button class="btn btn-primary mb-3">
+                        <span class="ps-3">Pay ₹243</span>
+                        <span class="fas fa-arrow-right"></span>
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#cardnumber').mask('0000 0000 0000 0000');
+            $('#date').mask('00/0000');
+        });
+    </script>
+    <partial name="_ValidationScriptsPartial" />
+}

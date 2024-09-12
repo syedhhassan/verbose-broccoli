@@ -9,7 +9,8 @@ namespace GroceryStore.Core.IRepositories
 {
     public interface IProductRepository
     {
-        public List<ProductModel> GetProducts();
+        public List<ProductModel> GetProducts(Guid UserId);
 
+        public List<ProductModel> SearchProducts(Guid UserId, string SearchQuery);
     }
 }

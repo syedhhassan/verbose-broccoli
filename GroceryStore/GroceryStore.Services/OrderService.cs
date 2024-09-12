@@ -23,6 +23,19 @@ namespace GroceryStore.Services
         }
         #endregion
 
+        #region Update Address
+        /// <summary>
+        /// Update Address
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <param name="Address"></param>
+        /// <returns></returns>
+        public bool UpdateAddress(Guid UserId, string Address)
+        {
+            return _orderRepository.UpdateAddress(UserId, Address);
+        }
+        #endregion
+
         #region Get orders
         /// <summary>
         /// Get orders
@@ -53,7 +66,7 @@ namespace GroceryStore.Services
         /// </summary>
         /// <param name="UserId"></param>
         /// <returns></returns>
-        public bool NewOrder(Guid UserId)
+        public decimal NewOrder(Guid UserId)
         {
             return _orderRepository.NewOrder(UserId);
         }

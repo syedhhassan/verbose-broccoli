@@ -64,6 +64,7 @@ namespace GroceryStore.Services
                 {
                     details["Name"] = user_creds.Name;
                     details["UserId"] = user_creds.UserId.ToString();
+                    details["Address"] = user_creds.Address;
                     return details;
                 }
                 else

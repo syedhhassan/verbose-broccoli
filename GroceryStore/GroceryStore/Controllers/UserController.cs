@@ -9,6 +9,10 @@ namespace GroceryStore.Controllers
     {
 
 		#region Sign In
+        /// <summary>
+        /// Sign In
+        /// </summary>
+        /// <returns></returns>
 		[Route("login")]
         public IActionResult SignIn()
         {
@@ -71,13 +75,13 @@ namespace GroceryStore.Controllers
                 {
                     var responseString = await response.Content.ReadAsStringAsync();
                     var responseData = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseString);
-                    var fan = responseData.GetType();
                     if (responseString != null && user.Email != null)
                     {
                         TempData["Email"] = user.Email;
                         HttpContext.Session.SetString("Email", user.Email);
                         HttpContext.Session.SetString("UserId", responseData["UserId"]);
                         HttpContext.Session.SetString("Name", responseData["Name"]);
+                        HttpContext.Session.SetString("Address", responseData["Address"]);
                         return RedirectToAction("Mart", "Product");
                     }
                     else
@@ -94,6 +98,20 @@ namespace GroceryStore.Controllers
                     return View();
                 }
             }
+        }
+        #endregion
+
+        #region Log out
+        /// <summary>
+        /// Log out
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult LogOut()
+        {
+            HttpContext.Session.Clear();
+            TempData["ToastrMessage"] = "Logged out successfully!";
+            TempData["ToastrType"] = "success";
+            return RedirectToAction("Index", "Home");
         }
         #endregion
 

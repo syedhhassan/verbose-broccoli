@@ -26,6 +26,21 @@ namespace GroceryStoreAPI.Controllers
 
         #endregion
 
+        #region Update Address
+        /// <summary>
+        /// Update Address
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <param name="Address"></param>
+        /// <returns></returns>
+        [Route("updateaddress")]
+        [HttpPost]
+        public bool UpdateAddress(Guid UserId,  string Address)
+        {
+            return _orderService.UpdateAddress(UserId, Address);
+        }
+        #endregion
+
         #region Get orders
         /// <summary>
         /// Get orders
@@ -62,7 +77,7 @@ namespace GroceryStoreAPI.Controllers
         /// <returns></returns>
         [Route("neworder")]
         [HttpPost]
-        public bool NewOrder(Guid UserId)
+        public decimal NewOrder(Guid UserId)
         {
             return _orderService.NewOrder(UserId);
         }

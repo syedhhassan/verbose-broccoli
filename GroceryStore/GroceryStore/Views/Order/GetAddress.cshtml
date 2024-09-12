@@ -1,0 +1,58 @@
+﻿@model GroceryStore.Models.AddressModel;
+
+<div class="row mt-3 mx-3 justify-content-center" style="margin-top:25px ;">
+    <div class="col-md-9 justify-content-center">
+        <div class="card card-custom pb-4" id="addresscard">
+            <div class="card-body mt-0 mx-5">
+                <h4 class="mt-5">Shipping Address</h4>
+                @using (Html.BeginForm("GetAddress", "Order", FormMethod.Post, new { @id = "SignIn", @class = "mb-0 mt-5" }))
+                {
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div data-mdb-input-init class="form-outline">
+                                @Html.TextBox("AddressLine1", "", new { @class = "form-control", @id = "Add1" })
+                                <label style="color: black" for="Add1">Address Line 1</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div data-mdb-input-init class="form-outline">
+                                @Html.TextBox("AddressLine2", "", new { @class = "form-control", @id = "Add2" })
+                                <label style="color: black" for="Add2">Address Line 2</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div data-mdb-input-init class="form-outline">
+                                @Html.TextBox("City", "", new { @class = "form-control", @id = "City" })
+                                <label style="color: black" for="City">City</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div data-mdb-input-init class="form-outline">
+                                @Html.TextBox("Zip", "", new { @class = "form-control", @id = "Zip" })
+                                <label style="color: black" for="Zip">Zip</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-end ">
+                        <button type="submit" class="btn btn-primary btn-rounded" style="background-color: #0062CC ;">
+                            Place order
+                        </button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #addresscard {
+        background: -webkit-linear-gradient(left, #3931af, #00c6ff) !important;
+    }
+
+
+    .input-custom {
+        background-color: white;
+    }
+</style>

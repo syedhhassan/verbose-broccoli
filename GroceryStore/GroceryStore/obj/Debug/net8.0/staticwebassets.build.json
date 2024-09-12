@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2NV8NCUZxr7BprVeLVYJOCYsF7NtzHO+bS3pvwRMJwU=",
+  "Hash": "EbsxBdG/wxcQPkd+XSQYEXZa1upC4Rpxv8xXoyr6H00=",
   "Source": "GroceryStore",
   "BasePath": "_content/GroceryStore",
   "Mode": "Default",
@@ -1689,6 +1689,25 @@
       "OriginalItemSpec": "wwwroot\\css\\normalize.css"
     },
     {
+      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\payment.css",
+      "SourceId": "GroceryStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\",
+      "BasePath": "_content/GroceryStore",
+      "RelativePath": "css/payment.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\payment.css"
+    },
+    {
       "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\site.css",
       "SourceId": "GroceryStore",
       "SourceType": "Discovered",
@@ -1725,6 +1744,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\success.css",
+      "SourceId": "GroceryStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\",
+      "BasePath": "_content/GroceryStore",
+      "RelativePath": "css/success.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\success.css"
     },
     {
       "Identity": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\user.css",

@@ -9,10 +9,12 @@ namespace GroceryStore.Core.IServices
 {
     public interface IOrderService
     {
+        public bool UpdateAddress(Guid UserId, string Address);
+
         public List<OrderModel> GetOrders(Guid UserId);
 
         public List<OrderItemModel> GetOrderItems(Guid OrderId);
 
-        public bool NewOrder(Guid UserId);
+        public decimal NewOrder(Guid UserId);
     }
 }

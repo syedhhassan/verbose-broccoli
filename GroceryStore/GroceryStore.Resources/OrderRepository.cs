@@ -32,6 +32,32 @@ namespace GroceryStore.Resources
 
         #endregion
 
+        #region Update address
+        /// <summary>
+        /// Update address
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <param name="Address"></param>
+        /// <returns></returns>
+        public bool UpdateAddress(Guid UserId, string Address)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionstring))
+                {
+                    connection.Open();
+                    connection.Execute(SQLQueries.update_address_query, new { @USERID = UserId, @ADDRESS = Address });
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+                return false;
+            }
+            return true;
+        }
+        #endregion
+
         #region Get orders
         /// <summary>
         /// Get orders
@@ -88,8 +114,9 @@ namespace GroceryStore.Resources
         /// </summary>
         /// <param name="UserId"></param>
         /// <returns></returns>
-        public bool NewOrder(Guid UserId)
+        public decimal NewOrder(Guid UserId)
         {
+            decimal Price = 0;
             List<CartResponseModel> cart = new List<CartResponseModel>();
             try
             {
@@ -98,7 +125,6 @@ namespace GroceryStore.Resources
                     connection.Open();
                     cart = connection.Query<CartResponseModel>(SQLQueries.fetch_cart_data_query, new { @USERID = UserId }).ToList();
                     string Address = connection.QuerySingle<string>(SQLQueries.get_address_query, new { @USERID = UserId });
-                    decimal Price = 0;
                     foreach (var product in cart)
                     {
                         Price = Price + (product.Price * product.Quantity);
@@ -115,9 +141,9 @@ namespace GroceryStore.Resources
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
-                return false;
+                return 0;
             }
-            return true;
+            return Price;
         }
         #endregion
     }

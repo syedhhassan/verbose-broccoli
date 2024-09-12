@@ -32,9 +32,24 @@ namespace GroceryStoreAPI.Controllers
         /// <returns></returns>
         [Route("mart")]
         [HttpGet]
-        public List<ProductModel> GetProducts()
+        public List<ProductModel> GetProducts(Guid UserId)
         {
-            return _productService.GetProducts();
+            return _productService.GetProducts(UserId);
+        }
+        #endregion
+
+        #region Search products
+        /// <summary>
+        /// Search products
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <param name="SearchQuery"></param>
+        /// <returns></returns>
+        [Route("search")]
+        [HttpGet]
+        public List<ProductModel> SearchProducts(Guid UserId, string SearchQuery)
+        {
+            return _productService.SearchProducts(UserId, SearchQuery);
         }
         #endregion
 

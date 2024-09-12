@@ -1,11 +1,71 @@
 ﻿using GroceryStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Net;
+using System.Text;
 
 namespace GroceryStore.Controllers
 {
     public class OrderController : Controller
     {
+        #region Get shipping address
+        /// <summary>
+        ///Get shipping address
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public IActionResult GetAddress()
+        {
+            if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Address")))
+            {
+                return RedirectToAction("Payment", "Order");
+            }
+            if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")))
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+        }
+        #endregion
+
+        #region Get shipping address post action
+        /// <summary>
+        /// Get shipping address post action
+        /// </summary>
+        /// <param name="address"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<ActionResult> GetAddress(AddressModel address)
+        {
+            if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")))
+            {
+                string sessionuser = HttpContext.Session.GetString("UserId");
+                string shipAddress = $"{address.AddressLine1}, {address.AddressLine2}, {address.City}, {address.Zip}";
+                using (HttpClient client = new HttpClient())
+                {
+                    string requestUrl = $"https://localhost:7083/api/OrderAPI/updateaddress?Email={sessionuser}&Address={shipAddress}";
+                    var response = await client.PostAsync(requestUrl, null);
+                    
+                    if (response.IsSuccessStatusCode)
+                    {
+                        HttpContext.Session.SetString("Address", shipAddress);
+                        return RedirectToAction("Payment", "Order");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+        }
+        #endregion
 
         #region Get orders
         /// <summary>
@@ -81,31 +141,51 @@ namespace GroceryStore.Controllers
         /// <param name="UserId"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<JsonResult> NewOrder(Guid UserId)
+        public async Task<ActionResult> NewOrder()
         {
             if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")))
             {
-                List<OrderItemModel> items = new List<OrderItemModel>();
+                string sessionuser = HttpContext.Session.GetString("UserId");
                 using (HttpClient client = new HttpClient())
                 {
-                    string requestUrl = $"https://localhost:7083/api/OrderAPI/getorderitems?UserId={UserId}";
+                    string requestUrl = $"https://localhost:7083/api/OrderAPI/neworder?UserId={sessionuser}";
                     var response = await client.PostAsync(requestUrl, null);
 
                     if (response.IsSuccessStatusCode)
                     {
                         var responseString = await response.Content.ReadAsStringAsync();
-                        items = JsonConvert.DeserializeObject<List<OrderItemModel>>(responseString);
-                        return Json(items);
+                        return RedirectToAction("OrderSuccess");
                     }
                     else
                     {
-                        return Json(items);
+                        return RedirectToAction("Mart", "Product");
                     }
                 }
             }
-            return Json(new { error = "User not logged in" });
+            return RedirectToAction("Mart", "Product");
         }
         #endregion
 
+        #region Payment gateway
+        /// <summary>
+        /// Payment gateway
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Payment()
+        {
+            if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")) && !String.IsNullOrEmpty(HttpContext.Session.GetString("Address")))
+            {
+                return View();
+            }
+            return RedirectToAction("Index", "Home");
+        }
+        #endregion
+
+        #region 
+        public IActionResult OrderSuccess()
+        {
+            return View();
+        }
+        #endregion
     }
 }

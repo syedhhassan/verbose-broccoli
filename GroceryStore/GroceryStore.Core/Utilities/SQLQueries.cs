@@ -11,13 +11,15 @@ namespace GroceryStore.Core.Utilities
 
         public static string sign_up_query = "INSERT INTO STS892_SHOPPER (NAME, EMAIL, PASSWORDHASH, SALT, PHONE) VALUES (@NAME, @EMAIL, @PASSWORDHASH, @SALT, @PHONE);";
 
-        public static string update_address_query = "UPDATE STS892_SHOPPER SET ADDRESS = @ADRESS WHERE USERID = @USERID;";
+        public static string update_address_query = "UPDATE STS892_SHOPPER SET ADDRESS = @ADDRESS WHERE USERID = @USERID;";
 
-        public static string get_creds_query = "SELECT USERID, NAME, SALT, PASSWORDHASH FROM STS892_SHOPPER WHERE EMAIL = @EMAIL AND IS_ACTIVE = 1;";
+        public static string get_creds_query = "SELECT USERID, NAME, SALT, PASSWORDHASH, ADDRESS FROM STS892_SHOPPER WHERE EMAIL = @EMAIL AND IS_ACTIVE = 1;";
 
         public static string get_address_query = "SELECT ADDRESS FROM STS892_SHOPPER WHERE USERID = @USERID;";
 
-        public static string get_products_query = "SELECT PRODUCTID, NAME, PRICE, QUANTITY, CATEGORY, PATH FROM STS892_PRODUCTS;";
+        public static string get_products_query = "SELECT P.PRODUCTID, P.NAME, P.PRICE, P.QUANTITY, P.CATEGORY, PATH, COALESCE(C.QUANTITY, 0) AS PRODUCTQUANTITY FROM STS892_PRODUCTS P FULL OUTER JOIN STS892_CART C ON P.PRODUCTID = C.PRODUCTID AND USERID = @USERID;";
+
+        public static string product_search_query = "SELECT P.PRODUCTID, P.NAME, P.PRICE, P.QUANTITY, P.CATEGORY, PATH, COALESCE(C.QUANTITY, 0) AS PRODUCTQUANTITY FROM STS892_PRODUCTS P FULL OUTER JOIN STS892_CART C ON P.PRODUCTID = C.PRODUCTID AND USERID = @USERID WHERE NAME LIKE '%' + @SEARCHQUERY + '%' OR CATEGORY LIKE '%' + @SEARCHQUERY + '%';";
 
         public static string fetch_cart_data_query = "SELECT C.PRODUCTID, P.NAME, P.PRICE, C.QUANTITY FROM STS892_CART C JOIN STS892_PRODUCTS P ON C.PRODUCTID = P.PRODUCTID WHERE USERID = @USERID;";
 
@@ -33,7 +35,7 @@ namespace GroceryStore.Core.Utilities
 
         public static string delete_cart_for_user_query = "DELETE FROM STS892_CART WHERE USERID = @USERID;";
 
-        public static string get_orderid_query = "SELECT TOP 1 ORDERID FROM STS892_ORDERS WHERE USERID = @USERID ORDER BY ORDERDATE ;";
+        public static string get_orderid_query = "SELECT TOP 1 ORDERID FROM STS892_ORDERS WHERE USERID = @USERID ORDER BY ORDERDATE DESC;";
 
         public static string new_order_query = "INSERT INTO STS892_ORDERS (USERID, ADDRESS, TOTAL) VALUES (@USERID, @ADDRESS, @TOTAL);";
 

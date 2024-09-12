@@ -1,6 +1,4 @@
-﻿@* @model GroceryStore.Models.CartModel; *@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -150,13 +148,14 @@
                             </a>
                         </li>
                     </ul>
-
-                    <div class="cart text-end d-none d-lg-block dropdown">
-                        <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" onclick="FetchCart()">
-                            <span class="fs-6 text-muted dropdown-toggle">Your Cart</span>
-                            <span class="cart-total fs-5 fw-bold">$1290.00</span>
-                        </button>
-                    </div>
+                    @if (ViewContext.RouteData.Values["action"].ToString() != "Payment" && ViewContext.RouteData.Values["action"].ToString() != "GetAddress")
+                    {
+                        <div class="cart text-end d-none d-lg-block dropdown">
+                            <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" onclick="FetchCart()">
+                                <span class="fs-6 fw-bold dropdown-toggle">Your Cart</span>
+                            </button>
+                        </div>
+                    }
                 </div>
 
             </div>
@@ -317,7 +316,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 copyright">
-                    <p>© 2023 Foodmart. All rights reserved.</p>
+                    <p>© 2024 Foodmart. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -328,7 +327,6 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="~/lib/jquery-mask/dist/jquery.mask.js"></script>

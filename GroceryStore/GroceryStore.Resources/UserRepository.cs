@@ -73,6 +73,7 @@ namespace GroceryStore.Resources
                     user.Name = creds.NAME;
                     user.PasswordSalt = creds.SALT;
                     user.PasswordHash = creds.PASSWORDHASH;
+                    user.Address = creds.ADDRESS;
                 }
                 catch (Exception ex)
                 {

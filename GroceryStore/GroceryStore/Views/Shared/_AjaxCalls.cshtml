@@ -8,11 +8,35 @@
             success: function (response) {
                 if (response.error) {
                     console.error(response.error);
-                } else {
+                } 
+                else {
+                    var html = '';
+                    var qty = 0;
+                    var total = 0;
+                    if (response.length === 0) {
+                        html += '<strong class="position-absolute top-50 start-50 translate-middle fs-4">Cart Empty</strong>';
+                        $('#offcanvas')
+                    }
+                    else {
+                        $.each(response, function (index, item) {
+                            html += '<li class="list-group-item d-flex justify-content-between lh-sm">';
+                            html += '<div>';
+                            html += '<h6 class="my-0">' + item.name + '</h6>';
+                            html += '<small class="text-body-secondary">Qty: ' + item.quantity + '</small>';
+                            html += '</div>';
+                            html += '<span class="text-body-secondary">₹' + item.price * item.quantity + '</span>';
+                            html += '</li>';
+                            qty += item.quantity;
+                            total += item.quantity * item.price;
+                        });
+                        html += '<li class="list-group-item d-flex justify-content-between">';
+                        html += '<span> Total(INR) </span>';
+                        html += '<strong>₹' + total + '</strong>';
+                        html += '</li>';
+                    }
+                    $('#offcanvasCart .list-group').html(html);
+                    $('#offcanvasCart .badge').text(qty);
                 }
-            },
-            error: function (err) {
-                console.error(err);
             }
         });
     }
@@ -30,7 +54,7 @@
                 if (response.error) {
                     console.error(response.error);
                 } else {
-                    $("#quantity").html(response);
+                    $("#" + ProductId).text(response);
                 }
             },
             error: function (err) {
@@ -52,7 +76,12 @@
                 if (response.error) {
                     console.error(response.error);
                 } else {
-                    $("#quantity").html(response);
+                    if (response < 0) {
+                        $("#" + ProductId).text(0);
+                    }
+                    else{
+                        $("#" + ProductId).text(response);
+                    }
                 }
             },
             error: function (err) {
@@ -60,5 +89,24 @@
             }
         });
     }
+
+    function CheckOut() {
+        $.ajax({
+            url: "/Order/NewOrder",
+            type: "POST",
+            data: {},
+            success: function (response) {
+                if (response.error) {
+                    console.error(response.error);
+                } else {                    
+                    console.log('Order processed successfully.');
+                }
+            },
+            error: function (err) {
+                console.error(err);
+            }
+        });
+    }
+
 
 </script>
