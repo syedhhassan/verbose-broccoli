@@ -54,7 +54,6 @@ namespace GroceryStore.Controllers
         /// <param name="SearchQuery"></param>
         /// <returns></returns>
         [HttpGet]
-        [Route("search")]
         public async Task<ActionResult> SearchProducts(string SearchQuery)
         {
             if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")))
@@ -70,7 +69,7 @@ namespace GroceryStore.Controllers
                     {
                         var responseString = await response.Content.ReadAsStringAsync();
                         products = JsonConvert.DeserializeObject<List<ProductModel>>(responseString);
-                        return View("SearchResults", products);
+                        return View(products);
                     }
                     else
                     {

@@ -1,0 +1,33 @@
+﻿<link rel="stylesheet" href="~/css/orderitems.css" />
+
+<div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-lg-10 col-xl-8">
+        <div class="card" style="border-radius: 10px;">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <p class="lead fw-normal mb-0" style="color: #black;">Comfirm address</p>
+                </div>
+                <div class="card shadow-0 border mb-4">
+                    <div class="card-body">
+                        <strong>
+                            @ViewData["Address"]
+                        </strong>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0 px-4 py-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="btn btn-dark text-white text-uppercase rounded-pill px-3 py-2" asp-controller="Product" asp-action="Mart">
+                        ❮ Back
+                    </a>
+                    <a class="btn btn-primary text-white text-uppercase px-3 py-2" asp-controller="Order" asp-action="GetAddress">
+                        Edit Address
+                    </a>
+                    <a class="btn btn-success text-white text-uppercase rounded-pill px-3 py-2" asp-controller="Order" asp-action="Payment">
+                        Confirm ❯
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

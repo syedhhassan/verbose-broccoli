@@ -8,6 +8,7 @@ namespace GroceryStore.Core.Models
 {
     public class OrderItemModel
     {
+
         public string? Name {  get; set; }
 
         public int Quantity { get; set; }
@@ -15,5 +16,9 @@ namespace GroceryStore.Core.Models
         public float UnitPrice { get; set; }
 
         public float TotalPrice { get; set; }
-    }
+
+		public float TotalOrder { get; set; }
+
+
+	}
 }

@@ -349,6 +349,14 @@
       "PackagePath": "staticwebassets\\css\\normalize.css"
     },
     {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\orderitems.css",
+      "PackagePath": "staticwebassets\\css\\orderitems.css"
+    },
+    {
+      "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\orders.css",
+      "PackagePath": "staticwebassets\\css\\orders.css"
+    },
+    {
       "Id": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\wwwroot\\css\\payment.css",
       "PackagePath": "staticwebassets\\css\\payment.css"
     },

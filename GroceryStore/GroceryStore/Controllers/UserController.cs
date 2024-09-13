@@ -2,6 +2,7 @@
 using System.Text;
 using GroceryStore.Models;
 using Newtonsoft.Json;
+using static System.Net.WebRequestMethods;
 
 namespace GroceryStore.Controllers
 {
@@ -76,12 +77,17 @@ namespace GroceryStore.Controllers
                     var responseString = await response.Content.ReadAsStringAsync();
                     var responseData = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseString);
                     if (responseString != null && user.Email != null)
-                    {
-                        TempData["Email"] = user.Email;
+                    {                       
                         HttpContext.Session.SetString("Email", user.Email);
                         HttpContext.Session.SetString("UserId", responseData["UserId"]);
                         HttpContext.Session.SetString("Name", responseData["Name"]);
                         HttpContext.Session.SetString("Address", responseData["Address"]);
+
+                        var isAuthenticated = HttpContext.Session.GetString("Email");
+                        var username = HttpContext.Session.GetString("Name");
+                        ViewBag.isAuthenticated = isAuthenticated;
+                        ViewBag.Name = username;
+
                         return RedirectToAction("Mart", "Product");
                     }
                     else

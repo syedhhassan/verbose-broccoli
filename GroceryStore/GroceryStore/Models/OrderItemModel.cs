@@ -11,5 +11,7 @@
 
         public float TotalPrice { get; set; }
 
+        public float TotalOrder { get; set; }
+
     }
 }

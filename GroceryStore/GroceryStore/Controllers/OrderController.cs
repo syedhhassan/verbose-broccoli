@@ -8,6 +8,23 @@ namespace GroceryStore.Controllers
 {
     public class OrderController : Controller
     {
+
+        #region Confirm shipping address
+        /// <summary>
+        /// Confirm shipping address
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult ConfirmAddress()
+        {
+            if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Address")))
+            {
+                ViewData["Address"] = HttpContext.Session.GetString("Address");
+                return View();
+            }
+            return RedirectToAction("GetAddress");
+        }
+        #endregion
+
         #region Get shipping address
         /// <summary>
         ///Get shipping address
@@ -16,10 +33,6 @@ namespace GroceryStore.Controllers
         [HttpGet]
         public IActionResult GetAddress()
         {
-            if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Address")))
-            {
-                return RedirectToAction("Payment", "Order");
-            }
             if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")))
             {
                 return View();
@@ -74,7 +87,7 @@ namespace GroceryStore.Controllers
         /// <param name="UserId"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<JsonResult> GetOrders(Guid UserId)
+        public async Task<ActionResult> GetOrders(Guid UserId)
         {
             if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")))
             {
@@ -89,15 +102,15 @@ namespace GroceryStore.Controllers
                     {
                         var responseString = await response.Content.ReadAsStringAsync();
                         orders = JsonConvert.DeserializeObject<List<OrderModel>>(responseString);
-                        return Json(orders);
+                        return View(orders);
                     }
                     else
                     {
-                        return Json(orders);
+                        return View(orders);
                     }
                 }
             }
-            return Json(new { error = "User not logged in" });
+            return View(new { error = "User not logged in" });
         }
         #endregion
 
@@ -108,7 +121,7 @@ namespace GroceryStore.Controllers
         /// <param name="OrderId"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<JsonResult> GetOrderItems(Guid OrderId)
+        public async Task<ActionResult> GetOrderItems(Guid OrderId)
         {
             if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")))
             {              
@@ -122,15 +135,15 @@ namespace GroceryStore.Controllers
                     {
                         var responseString = await response.Content.ReadAsStringAsync();
                         items = JsonConvert.DeserializeObject<List<OrderItemModel>>(responseString);
-                        return Json(items);
+                        return View(items);
                     }
                     else
                     {
-                        return Json(items);
+                        return View(items);
                     }
                 }
             }
-            return Json(new { error = "User not logged in" });
+            return View(new { error = "User not logged in" });
         }
         #endregion
 
@@ -181,7 +194,11 @@ namespace GroceryStore.Controllers
         }
         #endregion
 
-        #region 
+        #region  Order success
+        /// <summary>
+        /// Order success
+        /// </summary>
+        /// <returns></returns>
         public IActionResult OrderSuccess()
         {
             return View();

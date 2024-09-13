@@ -1,48 +1,57 @@
 ﻿@model List<GroceryStore.Models.ProductModel>;
 
 <section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="bootstrap-tabs product-tabs">
+    @if (Model != null && Model.Any())
+    {
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bootstrap-tabs product-tabs">
 
-                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-content" id="nav-tabContent">
 
-                        <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
-                            <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-                                @for (int i = 0; i < Model.Count; i++)
-                                {
-                                    <div class="col">
-                                        <div class="product-item">
-                                            <figure>
-                                                <img src="/content/products/@Model[i].Path" style="width:200px; height:300px; object-fit:contain;">
-                                            </figure>
-                                            <h3 id="pdtname">@Model[i].Name</h3>
-                                            <span class="qty" id="pdtqty">@Model[i].Quantity</span>
-                                            <span class="price" id="pdtprice">₹@Model[i].Price</span>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="input-group product-qty">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus" onclick="RemoveFromCart(@Model[i].ProductId)">
-                                                            <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                                        </button>
-                                                    </span>
-                                                    <p type="text" id="@Model[i].ProductId" name="quantity" class="form-control input-number">@Model[i].ProductQuantity</p>
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId)">
-                                                            <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                                        </button>
-                                                    </span>
+                            <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+                                <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                                    <p>@Model.Count products found.</p>
+                                    @for (int i = 0; i < Model.Count; i++)
+                                    {
+                                        <div class="col">
+                                            <div class="product-item">
+                                                <figure>
+                                                    <img src="/content/products/@Model[i].Path" style="width:200px; height:300px; object-fit:contain;">
+                                                </figure>
+                                                <h3 id="pdtname">@Model[i].Name</h3>
+                                                <span class="qty" id="pdtqty">@Model[i].Quantity</span>
+                                                <span class="price" id="pdtprice">₹@Model[i].Price</span>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="input-group product-qty">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus" id="cartminus" onclick="RemoveFromCart(@Model[i].ProductId)">
+                                                                <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
+                                                            </button>
+                                                        </span>
+                                                        <p type="text" id="@Model[i].ProductId" name="quantity" class="form-control input-number">@Model[i].ProductQuantity</p>
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" id="cartplus" onclick="AddToCart(@Model[i].ProductId)">
+                                                                <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
+                                                            </button>
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                }
+                                    }
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    }
+    else
+    {
+        <h4 class="text-center">No products found.</h4>
+    }
+
 </section>

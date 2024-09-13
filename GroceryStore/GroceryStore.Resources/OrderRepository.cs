@@ -91,6 +91,7 @@ namespace GroceryStore.Resources
         /// <returns></returns>
         public List<OrderItemModel> GetOrderItems(Guid OrderId)
         {
+            float TotalValue = 0;
             List<OrderItemModel> items = new List<OrderItemModel>();
             try
             {
@@ -98,6 +99,11 @@ namespace GroceryStore.Resources
                 {
                     connection.Open();
                     items = connection.Query<OrderItemModel>(SQLQueries.get_order_items_query, new { @ORDERID = OrderId }).ToList();
+                    foreach (var item in items)
+                    {
+                        TotalValue = TotalValue + item.TotalPrice;
+                    }
+                    items[0].TotalOrder = TotalValue;
                 }
             }
             catch (Exception ex)

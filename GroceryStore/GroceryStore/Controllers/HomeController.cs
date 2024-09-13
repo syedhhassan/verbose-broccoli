@@ -15,6 +15,11 @@ namespace GroceryStore.Controllers
 
         public IActionResult Index()
         {
+            var isAuthenticated = HttpContext.Session.GetString("Email");
+            var username = HttpContext.Session.GetString("Name");
+            ViewData["Email"] = isAuthenticated;
+            ViewData["Name"] = username;
+
             return View();
         }
 

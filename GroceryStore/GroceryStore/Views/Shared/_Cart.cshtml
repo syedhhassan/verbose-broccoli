@@ -1,4 +1,4 @@
-﻿<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
+﻿<div class="offcanvas offcanvas-end" data-bs-backdrop="static" data-bs-keyboard="false" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
     <div class="offcanvas-header justify-content-center">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
@@ -9,9 +9,10 @@
                 <span class="badge bg-primary rounded-pill"></span>
             </h4>
             <ul class="list-group mb-3">
+                <strong class="text-center fs-4">Cart Empty</strong>
                 <!-- Data from Ajax call -->
             </ul>
-            <div class="empty">                
+            <div class="chkbutton">
                 <a class="w-100 btn btn-primary btn-lg" asp-action="GetAddress" asp-controller="Order">Continue to checkout</a>
             </div>
         </div>
