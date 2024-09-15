@@ -7,14 +7,14 @@
     <Platforms>AnyCPU;ARM64</Platforms>
   </PropertyGroup>
 
-  <ItemGroup>
+  <!--<ItemGroup>
     <Content Remove="Views\Order\ConfirmAddress.cshtml" />
     <Content Remove="Views\Order\GetOrderItems.cshtml" />
     <Content Remove="Views\Order\GetOrders.cshtml" />
-  </ItemGroup>
+  </ItemGroup>-->
 
   <ItemGroup>
-	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.9" />
+	  <!--<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.9" />-->
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 

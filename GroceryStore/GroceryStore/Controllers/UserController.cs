@@ -41,8 +41,8 @@ namespace GroceryStore.Controllers
 
                 if (response.IsSuccessStatusCode)
                 {
-                    HttpContext.Session.SetString("Email", user.Email);
-                    HttpContext.Session.SetString("Name", user.Name);
+                    //HttpContext.Session.SetString("Email", user.Email);
+                    //HttpContext.Session.SetString("Name", user.Name);
                     TempData["ToastrMessage"] = "Signed up successfully. You can sign in.";
                     TempData["ToastrType"] = "success";
                     return RedirectToAction("Index", "Home");
@@ -55,7 +55,7 @@ namespace GroceryStore.Controllers
                 }
             }
         }
-		#endregion
+        #endregion
 
         #region Sign in post action
         /// <summary>
@@ -77,16 +77,24 @@ namespace GroceryStore.Controllers
                     var responseString = await response.Content.ReadAsStringAsync();
                     var responseData = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseString);
                     if (responseString != null && user.Email != null)
-                    {                       
+                    {
+                        // Set session values
                         HttpContext.Session.SetString("Email", user.Email);
                         HttpContext.Session.SetString("UserId", responseData["UserId"]);
                         HttpContext.Session.SetString("Name", responseData["Name"]);
-                        HttpContext.Session.SetString("Address", responseData["Address"]);
+                        //HttpContext.Session.SetString("Address", responseData["Address"]);
 
-                        var isAuthenticated = HttpContext.Session.GetString("Email");
-                        var username = HttpContext.Session.GetString("Name");
-                        ViewBag.isAuthenticated = isAuthenticated;
-                        ViewBag.Name = username;
+                        // Debugging: Check if session data is set
+                        var sessionEmail = HttpContext.Session.GetString("Email");
+                        var sessionName = HttpContext.Session.GetString("Name");
+                        if (sessionEmail == null || sessionName == null)
+                        {
+                            throw new Exception("Session data not set correctly.");
+                        }
+
+                        // Pass session values to ViewData
+                        ViewData["Email"] = user.Email;
+                        ViewData["Name"] = responseData["Name"];
 
                         return RedirectToAction("Mart", "Product");
                     }
