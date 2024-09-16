@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\GroceryStore.csproj",
+      "projectUniqueName": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\GroceryStore.csproj",
       "projectName": "GroceryStore",
-      "projectPath": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\GroceryStore.csproj",
+      "projectPath": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\GroceryStore.csproj",
       "packagesPath": "C:\\Users\\sts892\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\obj\\",
+      "outputPath": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sts892\\AppData\\Roaming\\NuGet\\NuGet.Config",

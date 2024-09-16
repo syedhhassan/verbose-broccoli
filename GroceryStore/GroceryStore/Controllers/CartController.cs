@@ -29,6 +29,16 @@ namespace GroceryStore.Controllers
                     {
                         var responseString = await response.Content.ReadAsStringAsync();
                         cart = JsonConvert.DeserializeObject<List<CartResponseModel>>(responseString);
+                        decimal total = 0;
+                        foreach (var product in cart)
+                        {
+                            total = total + (product.Price * product.Quantity);
+                        }
+                        if (cart.Count > 0)
+                        {
+                            HttpContext.Session.SetString("Cart", "Not Empty");
+                        }
+                        HttpContext.Session.SetString("Total", total.ToString());
                         return Json(cart);
                     }
                     else

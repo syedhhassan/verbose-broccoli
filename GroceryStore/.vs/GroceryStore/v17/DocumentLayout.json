@@ -1,54 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\",
+  "WorkspaceRootPath": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\views\\product\\searchproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\product\\searchproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore\\views\\shared\\_ajaxcalls.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\shared\\_ajaxcalls.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\grocerystore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\grocerystore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\views\\shared\\_profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\shared\\_profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\views\\shared\\_cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore\\views\\shared\\_cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\shared\\_cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore\\views\\shared\\_profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\shared\\_profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EC1AA11-B9EC-4B1E-A556-D462648BC1BC}|GroceryStore.Resources\\GroceryStore.Resources.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore.resources\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0EC1AA11-B9EC-4B1E-A556-D462648BC1BC}|GroceryStore.Resources\\GroceryStore.Resources.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore.resources\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC1AA11-B9EC-4B1E-A556-D462648BC1BC}|GroceryStore.Resources\\GroceryStore.Resources.csproj|solutionrelative:grocerystore.resources\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC1AA11-B9EC-4B1E-A556-D462648BC1BC}|GroceryStore.Resources\\GroceryStore.Resources.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore.resources\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0EC1AA11-B9EC-4B1E-A556-D462648BC1BC}|GroceryStore.Resources\\GroceryStore.Resources.csproj|solutionrelative:grocerystore.resources\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\views\\product\\mart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\product\\mart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\source\\repos\\grocer\\grocerystore\\grocerystore\\views\\shared\\_ajaxcalls.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\shared\\_ajaxcalls.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|c:\\users\\sts892\\desktop\\grocer0\\grocerystore\\grocerystore\\views\\order\\getorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2707886B-B8B9-4DEE-8759-149C039636EF}|GroceryStore\\GroceryStore.csproj|solutionrelative:grocerystore\\views\\order\\getorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,23 +58,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 12,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "GroceryStore\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "GroceryStore\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAQwFoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "GroceryStore\\Controllers",
-              "WhenOpened": "2024-09-13T12:09:39.012Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -85,145 +70,159 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GroceryStore",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\GroceryStore.csproj",
-              "RelativeDocumentMoniker": "GroceryStore\\GroceryStore.csproj",
-              "ToolTip": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\GroceryStore.csproj",
-              "RelativeToolTip": "GroceryStore\\GroceryStore.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-15T16:31:39.958Z",
+              "DocumentIndex": 1,
+              "Title": "_Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Shared\\_Cart.cshtml",
+              "RelativeDocumentMoniker": "GroceryStore\\Views\\Shared\\_Cart.cshtml",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Shared\\_Cart.cshtml",
+              "RelativeToolTip": "GroceryStore\\Views\\Shared\\_Cart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T06:04:41.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Program.cs",
-              "RelativeDocumentMoniker": "GroceryStore\\Program.cs",
-              "ToolTip": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Program.cs",
-              "RelativeToolTip": "GroceryStore\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "GroceryStore",
-              "WhenOpened": "2024-09-15T16:09:41.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Mart.cshtml",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Views\\Product\\Mart.cshtml",
-              "RelativeDocumentMoniker": "GroceryStore\\Views\\Product\\Mart.cshtml",
-              "ToolTip": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Views\\Product\\Mart.cshtml",
-              "RelativeToolTip": "GroceryStore\\Views\\Product\\Mart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T12:52:03.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_AjaxCalls.cshtml",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Views\\Shared\\_AjaxCalls.cshtml",
-              "RelativeDocumentMoniker": "GroceryStore\\Views\\Shared\\_AjaxCalls.cshtml",
-              "ToolTip": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Views\\Shared\\_AjaxCalls.cshtml",
-              "RelativeToolTip": "GroceryStore\\Views\\Shared\\_AjaxCalls.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHAAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T12:10:45.983Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SearchProducts.cshtml",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Views\\Product\\SearchProducts.cshtml",
-              "RelativeDocumentMoniker": "GroceryStore\\Views\\Product\\SearchProducts.cshtml",
-              "ToolTip": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Views\\Product\\SearchProducts.cshtml",
-              "RelativeToolTip": "GroceryStore\\Views\\Product\\SearchProducts.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAADAAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T12:10:26.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "GroceryStore\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "GroceryStore/Views/Shared/_Layout.cshtml",
-              "ViewState": "AQIAAMYAAAAAAAAAAAAmwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "OverriddenGroupName": "GroceryStore\\Views\\Shared",
-              "OverriddenToolTip": "GroceryStore/Views/Shared/_Layout.cshtml",
-              "WhenOpened": "2024-09-15T12:43:45.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "_Profile.cshtml",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Views\\Shared\\_Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Shared\\_Profile.cshtml",
               "RelativeDocumentMoniker": "GroceryStore\\Views\\Shared\\_Profile.cshtml",
-              "ToolTip": "GroceryStore/Views/Shared/_Profile.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABUAAAA",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Shared\\_Profile.cshtml",
+              "RelativeToolTip": "GroceryStore\\Views\\Shared\\_Profile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "OverriddenGroupName": "GroceryStore\\Views\\Shared",
-              "OverriddenToolTip": "GroceryStore/Views/Shared/_Profile.cshtml",
-              "WhenOpened": "2024-09-15T12:43:54.072Z",
+              "WhenOpened": "2024-09-16T06:03:09.785Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Cart.cshtml",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Views\\Shared\\_Cart.cshtml",
-              "RelativeDocumentMoniker": "GroceryStore\\Views\\Shared\\_Cart.cshtml",
-              "ToolTip": "GroceryStore/Views/Shared/_Cart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "OverriddenGroupName": "GroceryStore\\Views\\Shared",
-              "OverriddenToolTip": "GroceryStore/Views/Shared/_Cart.cshtml",
-              "WhenOpened": "2024-09-15T13:02:10.521Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "GroceryStore\\Controllers\\UserController.cs",
-              "ToolTip": "GroceryStore/Controllers/UserController.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAArwDwAAAAVAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Program.cs",
+              "RelativeDocumentMoniker": "GroceryStore\\Program.cs",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Program.cs",
+              "RelativeToolTip": "GroceryStore\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "GroceryStore\\Controllers",
-              "OverriddenToolTip": "GroceryStore/Controllers/UserController.cs",
-              "WhenOpened": "2024-09-15T12:43:19.36Z",
+              "WhenOpened": "2024-09-16T06:02:37.103Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore.Resources\\UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore.Resources\\UserRepository.cs",
               "RelativeDocumentMoniker": "GroceryStore.Resources\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore.Resources\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore.Resources\\UserRepository.cs",
               "RelativeToolTip": "GroceryStore.Resources\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAmwEYAAAA3AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T12:08:04.306Z"
+              "WhenOpened": "2024-09-16T05:54:45.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "GroceryStore\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "GroceryStore\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAyAAAA",
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore.Resources\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "GroceryStore.Resources\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore.Resources\\OrderRepository.cs",
+              "RelativeToolTip": "GroceryStore.Resources\\OrderRepository.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAcwJgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T13:01:54.109Z"
+              "WhenOpened": "2024-09-16T05:30:54.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GroceryStore\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GroceryStore\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAqwOIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T05:36:53.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GroceryStore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GroceryStore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAGEBAAAAAAAAAAAswG0BAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T05:28:51.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetOrders.cshtml",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Order\\GetOrders.cshtml",
+              "RelativeDocumentMoniker": "GroceryStore\\Views\\Order\\GetOrders.cshtml",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Order\\GetOrders.cshtml",
+              "RelativeToolTip": "GroceryStore\\Views\\Order\\GetOrders.cshtml",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAACoAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T05:27:47.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GroceryStore\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GroceryStore\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAMwBIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T05:09:53.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "GroceryStore\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "GroceryStore\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAALgAAAAAAAAAAAAIwM0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T05:09:26.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_AjaxCalls.cshtml",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Shared\\_AjaxCalls.cshtml",
+              "RelativeDocumentMoniker": "GroceryStore\\Views\\Shared\\_AjaxCalls.cshtml",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Views\\Shared\\_AjaxCalls.cshtml",
+              "RelativeToolTip": "GroceryStore\\Views\\Shared\\_AjaxCalls.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T05:07:35.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "GroceryStore\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore\\Controllers\\CartController.cs",
+              "RelativeToolTip": "GroceryStore\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCYAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T05:07:33.967Z",
+              "EditorCaption": ""
             }
           ]
         }

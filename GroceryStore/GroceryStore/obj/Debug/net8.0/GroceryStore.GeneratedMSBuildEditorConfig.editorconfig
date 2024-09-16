@@ -9,87 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GroceryStore
 build_property.RootNamespace = GroceryStore
-build_property.ProjectDir = C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore\
+build_property.ProjectDir = C:\Users\sts892\Desktop\grocer0\GroceryStore\GroceryStore\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\sts892\source\repos\Grocer\GroceryStore\GroceryStore
+build_property.MSBuildProjectDirectory = C:\Users\sts892\Desktop\grocer0\GroceryStore\GroceryStore
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Home/Index.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Home/Privacy.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Order/ConfirmAddress.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Order/ConfirmAddress.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ29uZmlybUFkZHJlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Order/GetAddress.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Order/GetAddress.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcR2V0QWRkcmVzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Order/GetOrderItems.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Order/GetOrderItems.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcR2V0T3JkZXJJdGVtcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Order/GetOrders.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Order/GetOrders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcR2V0T3JkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Order/OrderSuccess.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Order/OrderSuccess.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Order/Payment.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Order/Payment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcUGF5bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Product/Mart.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Product/Mart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxNYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Product/SearchProducts.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Product/SearchProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTZWFyY2hQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Shared/Error.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Shared/_AjaxCalls.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Shared/_AjaxCalls.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BamF4Q2FsbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Shared/_Cart.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Shared/_Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Shared/_Profile.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Shared/_Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/User/SignIn.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/User/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/_ViewImports.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/_ViewStart.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sts892/source/repos/Grocer/GroceryStore/GroceryStore/Views/Shared/_Layout.cshtml]
+[C:/Users/sts892/Desktop/grocer0/GroceryStore/GroceryStore/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-enac6va2re

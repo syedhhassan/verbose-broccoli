@@ -1,39 +1,50 @@
-﻿@model List<GroceryStore.Models.OrderModel>;
+﻿@model List<GroceryStore.Models.OrderModel>
 
 <link rel="stylesheet" href="~/css/orders.css" />
 
 <div class="container">
-    <div class="table" style="background-color:rgba(230, 243, 250, 1)">
-        <div class="table-header">
-            <div class="header__item">Date</div>
-            <div class="header__item">Products</div>
-            <div class="header__item">Address</div>
-            <div class="header__item">Price</div>
-            <div class="header__item">View</div>
-        </div>
-        <div class="table-content">
-            @for (int i = 0; i < Model.Count; i++)
-            {
-                <div class="table-row">
-                    <div class="table-data">@Model[i].OrderDate</div>
-                    @if (Model[i].Products.Length > 45){
-                        <div class="table-data">@Model[i].Products.Substring(0, 35) ...</div>
-                    }
-                    else{
-                        <div class="table-data">@Model[i].Products</div>
-                    }
-                    <div class="table-data">@Model[i].Address</div>
-                    <div class="table-data">@Model[i].Total</div>
-                    <div class="table-data">
-                        <a class="btn btn-link text-dark text-uppercase" asp-controller="Order" asp-action="GetOrderItems" asp-route-OrderId="@Model[i].OrderId">View</a>
+    @if (Model != null && Model.Count > 0)
+    {
+        <div class="table rounded shadow-lg text-center p-4" style="background-color:rgba(230, 243, 250, 1); max-width: 600px; margin: 50px auto;">
+            <div class="table-header">
+                <div class="header__item">Date</div>
+                <div class="header__item">Products</div>
+                <div class="header__item">Address</div>
+                <div class="header__item">Price</div>
+                <div class="header__item">View</div>
+            </div>
+            <div class="table-content">
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    <div class="table-row">
+                        <div class="table-data">@Model[i].OrderDate</div>
+                        @if (Model[i].Products.Length > 45)
+                        {
+                            <div class="table-data">@Model[i].Products.Substring(0, 35) ...</div>
+                        }
+                        else
+                        {
+                            <div class="table-data">@Model[i].Products</div>
+                        }
+                        <div class="table-data">@Model[i].Address</div>
+                        <div class="table-data">@Model[i].Total</div>
+                        <div class="table-data">
+                            <a class="btn btn-link text-dark text-uppercase" asp-controller="Order" asp-action="GetOrderItems" asp-route-OrderId="@Model[i].OrderId">View</a>
+                        </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
         </div>
-    </div>
-</div>
-<div class="text-center">
-    <a class="btn btn-dark text-white text-uppercase rounded-pill px-3 py-2" asp-controller="Product" asp-action="Mart">
-        ❮ Back
-    </a>
+    }
+    else
+    {
+        <div class="container">
+            <div class="table rounded shadow-lg text-center p-4" style="background-color:rgba(230, 243, 250, 1); max-width: 600px; margin: 50px auto;">
+                <h4 style="padding: 20px; font-weight: 600; color: #333;">You haven't ordered anything yet</h4>
+                <a class="btn btn-dark text-white text-uppercase rounded-pill px-4 py-2 mt-3" asp-controller="Product" asp-action="Mart" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    ❮ Back
+                </a>
+            </div>
+        </div>
+    }
 </div>

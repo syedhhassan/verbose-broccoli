@@ -1249,11 +1249,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStoreAPI\\GroceryStoreAPI.csproj",
+      "projectUniqueName": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStoreAPI\\GroceryStoreAPI.csproj",
       "projectName": "GroceryStoreAPI",
-      "projectPath": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStoreAPI\\GroceryStoreAPI.csproj",
+      "projectPath": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStoreAPI\\GroceryStoreAPI.csproj",
       "packagesPath": "C:\\Users\\sts892\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStoreAPI\\obj\\",
+      "outputPath": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStoreAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sts892\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1271,14 +1271,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore.Core\\GroceryStore.Core.csproj": {
-              "projectPath": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore.Core\\GroceryStore.Core.csproj"
+            "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore.Core\\GroceryStore.Core.csproj": {
+              "projectPath": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore.Core\\GroceryStore.Core.csproj"
             },
-            "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore.Resources\\GroceryStore.Resources.csproj": {
-              "projectPath": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore.Resources\\GroceryStore.Resources.csproj"
+            "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore.Resources\\GroceryStore.Resources.csproj": {
+              "projectPath": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore.Resources\\GroceryStore.Resources.csproj"
             },
-            "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore.Services\\GroceryStore.Services.csproj": {
-              "projectPath": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStore.Services\\GroceryStore.Services.csproj"
+            "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore.Services\\GroceryStore.Services.csproj": {
+              "projectPath": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStore.Services\\GroceryStore.Services.csproj"
             }
           }
         }

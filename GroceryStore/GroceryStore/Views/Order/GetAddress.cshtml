@@ -5,33 +5,39 @@
         <div class="card card-custom pb-4" id="addresscard">
             <div class="card-body mt-0 mx-5">
                 <h4 class="mt-5">Shipping Address</h4>
-                @using (Html.BeginForm("GetAddress", "Order", FormMethod.Post, new { @id = "SignIn", @class = "mb-0 mt-5" }))
+                @using (Html.BeginForm("GetAddress", "Order", FormMethod.Post, new { @id = "Address", @class = "mb-0 mt-5" }))
                 {
                     <div class="row mb-4">
                         <div class="col">
                             <div data-mdb-input-init class="form-outline">
-                                @Html.TextBox("AddressLine1", "", new { @class = "form-control", @id = "Add1" })
-                                <label style="color: black" for="Add1">Address Line 1</label>
+                                @Html.TextBox("AddressLine1", "", new { @class = "form-control", @id = "AddressLine1" })
+                                <label style="color: black" for="AddressLine1">Address Line 1</label>
+                                <br />
+                                <label class="error" style="color: lightgreen" for="AddressLine1"></label>
                             </div>
                         </div>
                         <div class="col">
                             <div data-mdb-input-init class="form-outline">
-                                @Html.TextBox("AddressLine2", "", new { @class = "form-control", @id = "Add2" })
-                                <label style="color: black" for="Add2">Address Line 2</label>
+                                @Html.TextBox("AddressLine2", "", new { @class = "form-control", @id = "AddressLine2" })
+                                <label style="color: black" for="AddressLine2">Address Line 2</label>
                             </div>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col">
                             <div data-mdb-input-init class="form-outline">
-                                @Html.TextBox("City", "", new { @class = "form-control", @id = "City" })
+                                @Html.TextBox("City", "", new { @class = "form-control", @id = "City", @oninput = "this.value=(this.value.match('[A-Z a-z]+'))" })
                                 <label style="color: black" for="City">City</label>
+                                <br />
+                                <label class="error" style="color: lightgreen" for="City"></label>
                             </div>
                         </div>
                         <div class="col">
                             <div data-mdb-input-init class="form-outline">
-                                @Html.TextBox("Zip", "", new { @class = "form-control", @id = "Zip" })
+                                @Html.TextBox("Zip", "", new { @class = "form-control", @id = "Zip", @oninput = "this.value=(this.value.match('[0-9]+'))" })
                                 <label style="color: black" for="Zip">Zip</label>
+                                <br />
+                                <label class="error" style="color: lightgreen" for="Zip"></label>
                             </div>
                         </div>
                     </div>
@@ -59,3 +65,36 @@
         background-color: white;
     }
 </style>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var message = '@TempData["ToastrMessage"]';
+            var type = '@TempData["ToastrType"]';
+            if (message) {
+                toastr.options = {
+                    progressBar: true,
+                    positionClass: 'toast-top-right'
+                };
+                toastr[type](message);
+            }
+
+            $("#Address").validate({
+                rules: {
+                    AddressLine1: { required: true },
+                    City: { required: true },
+                    Zip: { required: true }
+                },
+                messages: {
+                    AddressLine1: { required: "Address is a required field" },
+                    City: { required: "City is a required field" },
+                    Zip: { required: "Zip code is required" }
+                }
+            });
+        });
+    </script>
+
+    <partial name="_ValidationScriptsPartial" />
+}

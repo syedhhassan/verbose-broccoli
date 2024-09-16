@@ -6,7 +6,7 @@
             url: "/Cart/FetchCart",
             type: "GET",
             success: function (response) {
-                console.log(response); // Log the response to check its structure
+                console.log(response);
                 if (response.error) {
                     console.error(response.error);
                 } else {
@@ -15,7 +15,7 @@
                     var total = 0;
                     if (response.length === 0) {
                         html += '<strong class="position-absolute top-50 start-50 translate-middle fs-4">Cart Empty</strong>';
-                        $('#offcanvasCart .chkbutton').html(''); // This should work to remove the button
+                        $('#offcanvasCart .chkbutton').html('');
                     } else {
                         $.each(response, function (index, item) {
                             html += '<li class="list-group-item d-flex justify-content-between lh-sm">';

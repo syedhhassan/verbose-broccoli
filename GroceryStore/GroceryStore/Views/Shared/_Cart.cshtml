@@ -1,4 +1,12 @@
-﻿<div class="offcanvas offcanvas-end" data-bs-backdrop="static" data-bs-keyboard="false" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
+﻿@using Microsoft.AspNetCore.Http
+
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var cart = HttpContextAccessor.HttpContext.Session.GetString("Cart");
+}
+
+<div class="offcanvas offcanvas-end" data-bs-backdrop="static" data-bs-keyboard="false" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
     <div class="offcanvas-header justify-content-center">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>

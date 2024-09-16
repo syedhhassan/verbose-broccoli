@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v4aN3ApeM88=",
+  "dgSpecHash": "d2sMjb891VU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sts892\\source\\repos\\Grocer\\GroceryStore\\GroceryStoreAPI\\GroceryStoreAPI.csproj",
+  "projectFilePath": "C:\\Users\\sts892\\Desktop\\grocer0\\GroceryStore\\GroceryStoreAPI\\GroceryStoreAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sts892\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\sts892\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.7\\microsoft.aspnetcore.cryptography.internal.8.0.7.nupkg.sha512",

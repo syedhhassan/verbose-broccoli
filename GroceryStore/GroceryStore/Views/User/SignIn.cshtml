@@ -15,7 +15,7 @@
 								<div class="center-wrap">
 									<div class="section text-center">
 										<h4 class="mb-4 pb-3">Log In</h4>
-										@using (Html.BeginForm("SignIn", "User", FormMethod.Post, new { @id = "SignUp" }))
+										@using (Html.BeginForm("SignIn", "User", FormMethod.Post, new { @id = "SignIn" }))
 										{
 											<div class="form-group">
 												@Html.TextBox("Email", "", new { @class = "form-style", @id = "logemail", maxlength = 50, @placeholder = "Your Email", @autocomplete = "off" })
@@ -45,7 +45,7 @@
 												<i class="input-icon uil uil-at"></i>
 											</div>
 											<div class="form-group mt-2">
-												@Html.TextBox("Password", "", new { @class = "form-style", @id = "logpass", maxlength = 50, @placeholder = "Your password", @type = "password", @autocomplete = "off" })
+												@Html.TextBox("Password", "", new { @class = "form-style", @id = "Password", maxlength = 50, @placeholder = "Your password", @type = "password", @autocomplete = "off" })
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
 											<div class="form-group mt-2">
@@ -53,7 +53,7 @@
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
 											<div class="form-group mt-2">
-												@Html.TextBox("Phone", "", new { @class = "form-style", @id = "phone", @oninput = "this.value=(this.value.match('[0-9-]+'))", maxlength = 12, @placeholder = "Your Phone number", @autocomplete = "off" })
+												@Html.TextBox("Phone", "", new { @class = "form-style", @id = "Phone", @oninput = "this.value=(this.value.match('[0-9-]+'))", maxlength = 12, @placeholder = "Your Phone number", @autocomplete = "off" })
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
 											<button type="submit" class="btn mt-4" id="submit">Sign Up</button>
@@ -70,48 +70,60 @@
 </div>
 
 @section Scripts {
-    <script>
-        $(document).ready(function () {
-            var message = '@TempData["ToastrMessage"]';
-            var type = '@TempData["ToastrType"]';
-            if (message !== "") {
-                toastr.options = {
-                    progressBar: true,
-                    positionClass: 'toast-top-right'
-                };
-                toastr[type](message);
-            }
-        });
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#Phone').mask('000-0000-000');
 
-        $('#ShowPass').on('click', function () {
-            var x = document.getElementById("Password");
-            if (x.type === "password") {
-                x.type = "text";
-            }
-            else {
-                x.type = "password";
-            }
-        });
+			var message = '@TempData["ToastrMessage"]';
+			var type = '@TempData["ToastrType"]';
+			if (message) {
+				toastr.options = {
+					progressBar: true,
+					positionClass: 'toast-top-right'
+				};
+				toastr[type](message);
+			}
 
-        $("#SignIn").validate({
-            rules: {
-                UserName: {
-                    required: true
-                },
-                Password: {
-                    required: true
-                }
-            },
-            messages: {
-                UserName: {
-                    required: "User name is a required field",
-                },
-                Password: {
-                    required: "Password is a required field"
-                }
-            }
-        });
-    </script>
+			$('#Phone').mask('000-0000-000');
 
-    <partial name="_ValidationScriptsPartial" />
+			$('#ShowPass').on('click', function () {
+				var x = document.getElementById("Password");
+				if (x.type === "password") {
+					x.type = "text";
+				} else {
+					x.type = "password";
+				}
+			});
+
+			$("#SignUp").validate({
+				rules: {
+					Name: { required: true },
+					Email: { required: true, email: true },
+					Password: { required: true, minlength: 8 },
+					CPassword: { required: true, equalTo: "#Password" }
+				},
+				messages: {
+					Name: { required: "Name is a required field" },
+					Email: { required: "Email is a required field", email: "Please enter a valid email" },
+					Password: { required: "Password is a required field", minlength: "Password should be at least 8 characters" },
+					CPassword: { required: "Re-enter your password", equalTo: "Passwords didn't match" }
+				}
+			});
+
+			$("#SignIn").validate({
+				rules: {
+					Email: { required: true, email: true },
+					Password: { required: true }
+				},
+				messages: {
+					Email: { required: "Email is a required field", email: "Please enter a valid email" },
+					Password: { required: "Password is a required field" }
+				}
+			});
+		});
+	</script>
+
+	<partial name="_ValidationScriptsPartial" />
 }

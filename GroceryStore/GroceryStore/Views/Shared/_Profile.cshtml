@@ -20,7 +20,14 @@
                         Hi @name!
                     </span>
                 </h4>
-                <a class="w-100 btn btn-primary btn-lg" asp-controller="User" asp-action="LogOut">Log out</a>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0"><a class="btn" asp-controller="Order" asp-action="GetOrders">Orders</a></h6>
+                        </div>
+                    </li>
+                </ul>
+                <a class="w-100 btn btn-danger btn-lg" asp-controller="User" asp-action="LogOut">Log out</a>
             </div>
         }
         else

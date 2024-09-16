@@ -56,10 +56,10 @@ namespace GroceryStore.Controllers
             if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")))
             {
                 string sessionuser = HttpContext.Session.GetString("UserId");
-                string shipAddress = $"{address.AddressLine1}, {address.AddressLine2}, {address.City}, {address.Zip}";
+                string shipAddress = $"{address.AddressLine1}, {address.AddressLine2}, {address.City}, {address.Zip}.";
                 using (HttpClient client = new HttpClient())
                 {
-                    string requestUrl = $"https://localhost:7083/api/OrderAPI/updateaddress?Email={sessionuser}&Address={shipAddress}";
+                    string requestUrl = $"https://localhost:7083/api/OrderAPI/updateaddress?UserId={sessionuser}&Address={shipAddress}";
                     var response = await client.PostAsync(requestUrl, null);
                     
                     if (response.IsSuccessStatusCode)
@@ -162,11 +162,11 @@ namespace GroceryStore.Controllers
                 using (HttpClient client = new HttpClient())
                 {
                     string requestUrl = $"https://localhost:7083/api/OrderAPI/neworder?UserId={sessionuser}";
-                    var response = await client.PostAsync(requestUrl, null);
-
-                    if (response.IsSuccessStatusCode)
+                    var response = await client.PostAsync(requestUrl, null); 
+                    var responseString = await response.Content.ReadAsStringAsync();
+                    int total = JsonConvert.DeserializeObject<int>(responseString);
+                    if (total > 0)
                     {
-                        var responseString = await response.Content.ReadAsStringAsync();
                         return RedirectToAction("OrderSuccess");
                     }
                     else
@@ -188,6 +188,7 @@ namespace GroceryStore.Controllers
         {
             if (!String.IsNullOrEmpty(HttpContext.Session.GetString("Email")) && !String.IsNullOrEmpty(HttpContext.Session.GetString("Address")))
             {
+                TempData["Total"] = HttpContext.Session.GetString("Total");
                 return View();
             }
             return RedirectToAction("Index", "Home");
