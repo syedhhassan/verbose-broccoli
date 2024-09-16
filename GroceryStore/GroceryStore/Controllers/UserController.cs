@@ -38,20 +38,21 @@ namespace GroceryStore.Controllers
                 var jsonContent = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json");
 
                 var response = await client.PostAsync(requestUrl, jsonContent);
-
-                if (response.IsSuccessStatusCode)
+                var responseString = await response.Content.ReadAsStringAsync();
+                bool responseData = JsonConvert.DeserializeObject<bool>(responseString);
+                if (responseData)
                 {
                     //HttpContext.Session.SetString("Email", user.Email);
                     //HttpContext.Session.SetString("Name", user.Name);
                     TempData["ToastrMessage"] = "Signed up successfully. You can sign in.";
                     TempData["ToastrType"] = "success";
-                    return RedirectToAction("Index", "Home");
+                    return View("SignIn");
                 }
                 else
                 {
                     TempData["ToastrMessage"] = "Email already exists. Please Sign In";
                     TempData["ToastrType"] = "warning";
-                    return RedirectToAction("SignUp", user);
+                    return RedirectToAction("SignIn");
                 }
             }
         }
@@ -78,21 +79,14 @@ namespace GroceryStore.Controllers
                     var responseData = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseString);
                     if (responseString != null && user.Email != null)
                     {
-                        // Set session values
                         HttpContext.Session.SetString("Email", user.Email);
                         HttpContext.Session.SetString("UserId", responseData["UserId"]);
                         HttpContext.Session.SetString("Name", responseData["Name"]);
-                        //HttpContext.Session.SetString("Address", responseData["Address"]);
-
-                        // Debugging: Check if session data is set
-                        var sessionEmail = HttpContext.Session.GetString("Email");
-                        var sessionName = HttpContext.Session.GetString("Name");
-                        if (sessionEmail == null || sessionName == null)
+                        if (responseData["Address"] != null)
                         {
-                            throw new Exception("Session data not set correctly.");
+                            HttpContext.Session.SetString("Address", responseData["Address"]);
                         }
 
-                        // Pass session values to ViewData
                         ViewData["Email"] = user.Email;
                         ViewData["Name"] = responseData["Name"];
 

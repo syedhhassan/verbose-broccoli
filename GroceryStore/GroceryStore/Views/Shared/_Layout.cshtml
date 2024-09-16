@@ -110,7 +110,7 @@
         </div>
     </div>
 
-    <header>
+    <header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4)); backdrop-filter: blur(10px); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); ">
         <div class="container-fluid">
             <div class="row py-3 border-bottom">
 
@@ -166,18 +166,26 @@
                     </ul>  
                     @if (ViewContext.RouteData.Values["action"].ToString() != "Payment" && ViewContext.RouteData.Values["action"].ToString() != "GetAddress" && ViewContext.RouteData.Values["action"].ToString() != "SignIn")
                     {
+@*                         <a class="rounded-circle bg-light p-2 mx-1 position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" onclick="FetchCart()">
+                            <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                3
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a> *@
+
                         <div class="cart text-end d-none d-lg-block dropdown">
-                            <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" onclick="FetchCart()">
-                                <span class="fs-6 fw-bold dropdown-toggle">Your Cart</span>
-                            </button>
+                            <a class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" onclick="FetchCart()">
+                                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
+                            </a>
                         </div>
                     }
                     else
                     {
                         <div class="cart text-end d-none d-lg-block dropdown">
-                            <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" onclick="FetchCart()" disabled="true" style="cursor:not-allowed">
-                                <span class="fs-6 fw-bold dropdown-toggle">Your Cart</span>
-                            </button>
+                            <a class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" onclick="FetchCart()" disabled="true" style="cursor:not-allowed">
+                                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
+                            </a>
                         </div>
                     }
                 </div>
@@ -186,7 +194,7 @@
         </div>
     </header>
 
-    <main role="main" class="pb-3">
+    <main role="main" class="pb-3" style="margin: 0; padding-top: 85px;">
         @RenderBody()
     </main>
 
@@ -217,7 +225,7 @@
                             <div class="col-md-10">
                                 <div class="card-body p-0">
                                     <h5>100% secure payment</h5>
-                                    <p class="card-text">End-to-end encrypted payment methods.</p>
+                                    <p class="card-text">End-to-end encrypted payment methods. Safe. Sound. Secure.</p>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +270,7 @@
                             <div class="col-md-10">
                                 <div class="card-body p-0">
                                     <h5>Daily offers</h5>
-                                    <p class="card-text">Get offers back to back.</p>
+                                    <p class="card-text">Get offers back to back everyday.</p>
                                 </div>
                             </div>
                         </div>
@@ -287,22 +295,22 @@
                         <h5 class="widget-title">About Foodmart</h5>
                         <ul class="menu-list list-unstyled">
                             <li class="menu-item">
-                                <a href="#" class="nav-link">About us</a>
+                                <a href="/Home/Privacy" class="nav-link">About us</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Conditions </a>
+                                <a href="/Home/Privacy" class="nav-link">Conditions </a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Our Journals</a>
+                                <a href="/Home/Privacy" class="nav-link">Our Journals</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Careers</a>
+                                <a href="/Home/Privacy" class="nav-link">Careers</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Affiliate Programme</a>
+                                <a href="/Home/Privacy" class="nav-link">Affiliate Programme</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Ultras Press</a>
+                                <a href="/Home/Privacy" class="nav-link">Ultras Press</a>
                             </li>
                         </ul>
                     </div>
@@ -312,22 +320,22 @@
                         <h5 class="widget-title">Customer Service</h5>
                         <ul class="menu-list list-unstyled">
                             <li class="menu-item">
-                                <a href="#" class="nav-link">FAQ</a>
+                                <a href="/Home/Privacy" class="nav-link">FAQ</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Contact</a>
+                                <a href="/Home/Privacy" class="nav-link">Contact</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Privacy Policy</a>
+                                <a href="/Home/Privacy" class="nav-link">Privacy Policy</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Returns & Refunds</a>
+                                <a href="/Home/Privacy" class="nav-link">Returns & Refunds</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Cookie Guidelines</a>
+                                <a href="/Home/Privacy" class="nav-link">Cookie Guidelines</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="nav-link">Delivery Information</a>
+                                <a href="/Home/Privacy" class="nav-link">Delivery Information</a>
                             </li>
                         </ul>
                     </div>

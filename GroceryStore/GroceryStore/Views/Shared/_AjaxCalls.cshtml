@@ -8,6 +8,8 @@
             success: function (response) {
                 console.log(response);
                 if (response.error) {
+                    $('#offcanvasCart .list-group').html('<strong class="position-absolute top-50 start-50 translate-middle fs-4">Please sign in.</strong>');
+                    $('#offcanvasCart .chkbutton').html('');
                     console.error(response.error);
                 } else {
                     var html = '';
@@ -55,6 +57,9 @@
                     console.error(response.error);
                 } else {
                     $("#" + ProductId).text(response);
+                    // $(".product-item[data-product-id='" + ProductId + "']").each(function () {
+                    //     $(this).text(response);
+                    // });
                 }
             },
             error: function (err) {
@@ -92,7 +97,6 @@
 
     function performSearch() {
         var searchquery = document.getElementById('searchforproducts').value;
-
         Search(searchquery);
     }
 
