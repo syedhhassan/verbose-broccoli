@@ -47,11 +47,6 @@ namespace GroceryStore.Controllers
         }
         #endregion
 
-        //public IActionResult Result(List<ProductModel> products)
-        //{
-        //    return View(products);
-        //}
-
         #region Search products
         /// <summary>
         /// Search products
